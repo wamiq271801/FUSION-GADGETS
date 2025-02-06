@@ -69,25 +69,22 @@
 
     <!-- Link to the JavaScript file -->
     <script src="scripts.js"></script>
-    <!-- Other HTML content -->
-
-<!-- Place this just before the closing body tag -->
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const header = document.querySelector("header");
-      let lastScrollY = window.scrollY;
-    
-      window.addEventListener("scroll", function () {
-        if (window.scrollY > lastScrollY && window.scrollY > 50) {
-          // Scrolling down: hide header
-          header.classList.add("hidden");
-        } else {
-          // Scrolling up: show header
-          header.classList.remove("hidden");
-        }
-        lastScrollY = window.scrollY;
-      });
-    });
-    </script>
-    </body>
-    </html>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const header = document.querySelector("header");
+          let lastScrollY = window.scrollY;
+        
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > lastScrollY && window.scrollY > 50) {
+              // Scrolling down: hide header
+              header.classList.add("hidden");
+            } else {
+              // Scrolling up: show header
+              header.classList.remove("hidden");
+            }
+            lastScrollY = window.scrollY;
+          });
+        });
+        </script>
+        </body>
+        </html>
