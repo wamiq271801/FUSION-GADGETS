@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%202.png',
                 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%203.png',
                 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%204.png',
-                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%205.png',
                 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%206.png',
+                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%207.png',
             ]
         },
         { 
