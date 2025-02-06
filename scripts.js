@@ -188,3 +188,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+let lastScrollY = window.scrollY;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 50) {
+        // User is scrolling down, hide navbar
+        navbar.classList.add("hidden");
+    } else {
+        // User is scrolling up, show navbar
+        navbar.classList.remove("hidden");
+    }
+    lastScrollY = window.scrollY;
+});
