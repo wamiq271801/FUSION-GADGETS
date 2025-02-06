@@ -1,3 +1,4 @@
+
 /* Reset and General Styles */
 * {
     margin: 0;
@@ -47,19 +48,48 @@ a:hover {
 }
 
 /* Header */
+/* Header styling */
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    background: rgba(15, 32, 39, 0.9);
-    position: fixed;
-    width: 100%;
-    top: 0;
     z-index: 1000;
-    backdrop-filter: blur(10px);
-    animation: slideDown 1s ease-in-out;
-}
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Group for search bar and toggle button */
+  .search-toggle-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between search bar and toggle button */
+  }
+  
+  /* Search bar styling */
+  .search-container input {
+    height: 30px;           /* Reduced height */
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;           /* Adjust width as needed */
+  }  
+  
+  
+  /* When hidden, move the header up (adjust the - value to match your header's height) */
+  header.hidden {
+    top: -100px;
+  }
+  
+  /* Optional: Prevent content from hiding behind the header */
+  main {
+    padding-top: 120px; /* Adjust to your header's height plus some spacing */
+  }
+  
 
 @keyframes slideDown {
     from {
@@ -404,4 +434,26 @@ body.dark-theme .modal-content {
 .appear {
     opacity: 1;
     transform: translateY(0);
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+    padding: 20px 0; /* Default padding */
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust transparency */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.9); /* Adjust color */
+    padding: 15px 20px;
+    z-index: 1000;
+}
+
+.hidden {
+    top: -80px; /* Moves navbar out of view */
 }
