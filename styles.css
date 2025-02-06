@@ -252,3 +252,11 @@ body.dark-mode section {
         opacity: 1;
     }
 }
+
+@media (max-width: 600px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
