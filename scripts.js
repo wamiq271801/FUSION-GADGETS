@@ -20,7 +20,7 @@ const products = [
         images: [
             'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphone.png',
             'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphones%202.png',
-            'https://example.com/earphone-closeup.jpg'
+            'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphone%203.jpg'
         ]
     },
     { 
