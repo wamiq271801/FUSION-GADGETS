@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #ecf0f1;
+    padding-top: 80px; /* Push down main content */
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+body.dark-mode {
+    background: linear-gradient(to right, #2c3e50, #4b79a1);
+    color: #ecf0f1;
+}
+
+header {
+    background-color: #0f2027; /* Darker background for header */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed; /* Fixed header */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensures header stays on top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #ff5e62;
+    transition: background-color 0.5s ease-in-out;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+body.dark-mode header {
+    background-color: #34495e;
+}
+
+.logo-container {
+    margin-left: 10px; /* Adjust margin for spacing */
+}
+
+.logo-container img {
+    width: 100px; /* Increased size for the logo */
+    height: auto;
+}
+
+.theme-toggle,
+button,
+.search-container .search-button,
+.product-item button,
+.add-to-cart,
+.remove-from-cart,
+.decrement,
+.increment {
+    background-color: #ff5e62;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+.theme-toggle:hover,
+button:hover,
+.search-container .search-button:hover,
+.product-item button:hover,
+.add-to-cart:hover,
+.remove-from-cart:hover,
+.decrement:hover,
+.increment:hover {
+    background-color: #e54e53;
+    transform: translateY(-3px); /* Button hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow on hover */
+}
+
+button.clicked,
+.theme-toggle.clicked,
+.search-container .search-button.clicked,
+.product-item button.clicked,
+.add-to-cart.clicked,
+.remove-from-cart.clicked,
+.decrement.clicked,
+.increment.clicked {
+    background-color: #27ae60; /* Green color when clicked */
+    color: #fff;
+    transform: scale(1.1); /* Slight scale effect when clicked */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Added shadow when clicked */
+}
+
+.search-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-right: 10px; /* Adjust margin for spacing */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.search-container input {
+    width: 100%;
+    padding: 0.75em; /* Increased padding */
+    border: none;
+    outline: none;
+    font-size: 1.1em; /* Larger font size */
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+.search-container .search-button {
+    background-color: #ff5e62;
+    height: 100%; /* Match height of the search bar */
+    padding: 0.75em; /* Ensure height matches the search bar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+}
+
+.search-container .search-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-container .search-button:hover {
+    background-color: #e54e53;
+    transform: translateY(-3px); /* Button hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow on hover */
+}
+
+body.dark-mode .search-container .search-button {
+    background-color: #e74c3c;
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+    transition: background-color 0.5s ease-in-out;
+}
+
+body.dark-mode .suggestions {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.suggestions.show {
+    display: block;
+}
+
+.suggestions p {
+    margin: 0;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.suggestions p:hover {
+    background-color: #f1f1f1;
+}
+
+body.dark-mode .suggestions p:hover {
+    background-color: #34495e;
+}
+
+main {
+    padding: 5em 2em 2em 2em; /* Increased padding to accommodate fixed header */
+    color: #ecf0f1;
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+body.dark-mode main {
+    color: #ecf0f1;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease-in-out;
+    backdrop-filter: blur(5px); /* Add blur effect */
+}
+
+body.dark-mode section {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.inspiration-quote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ff5e62;
+    margin-top: 1em;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.33% - 2em); /* Three products in a row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #ecf0f1;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.5s ease-in-out;
+    animation: zoomIn 0.5s ease-in-out;
+    backdrop-filter: blur(5px); /* Add blur effect */
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

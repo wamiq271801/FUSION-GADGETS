@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUSION GADGETS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="C:\Users\wamiq\Downloads\pixelcut-export (7).png" alt="Logo">
+        </div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search products...">
+            <button class="search-button"><img src="C:\Users\wamiq\OneDrive\Desktop\search-icon-png-4.png" alt="Search Icon"></button>
+            <div class="suggestions" id="suggestions"></div>
+        </div>
+        <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <main>
+        <section id="home" class="center-text">
+            <h2>Welcome to FUSION GADGETS</h2>
+            <p>Discover our amazing products and enhance your life with the latest innovations!</p>
+            <blockquote class="inspiration-quote">"The future belongs to those who believe in the beauty of their dreams." – Eleanor Roosevelt</blockquote>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-list" id="product-list">
+                <!-- Dynamic product items will be injected here -->
+            </div>
+        </section>
+
+        <section id="cart-summary">
+            <h2>Cart Summary</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please reach out to us at contact@fusiongadgets.com</p>
+        </section>
+    </main>
+
+    <!-- Product Details Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-product-details"></div>
+        </div>
+    </div>
+</body>
+</html>
