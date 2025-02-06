@@ -12,13 +12,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const conversionRate = 83; // 1 USD = 83 INR
 
     // Product Data
-    const products = [
-        { id: 1, name: 'Realme wired Earphone', price: 199 / conversionRate, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphone.png' },
-        { id: 2, name: 'Microtek 700 watt inverter', price: 3499 / conversionRate, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/51I-YcUjLQL._SL1500_.jpg' },
-        { id: 3, name: 'Portable Lint Remover', price: 199 / conversionRate, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/81JesWfSLHL._AC_SL1500_.jpg' },
-        { id: 4, name: 'Multifunctional Liquid Shoe Brush', price: 249.99 / conversionRate, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/WhatsApp%20Image%202025-01-24%20at%205.51.43%20PM%20(9).jpeg' },
-        { id: 5, name: 'Smartwatch 10 Generation', price: 2499 / conversionRate, image: 'https://github.com/wamiq271801/FUSION-GADGETS/blob/main/MXLJ3ref_VW_34FR+watch-case-42-aluminum-jetblack-nc-s10_VW_34FR+watch-face-42-aluminum-jetblack-s10_VW_34FR.jpeg?raw=true' },
-    ];
+const products = [
+    { 
+        id: 1, 
+        name: 'Realme wired Earphone', 
+        price: 199 / conversionRate, 
+        images: [
+            'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphone.png',
+            'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphones%202.png',
+            'https://example.com/earphone-closeup.jpg'
+        ]
+    },
+    { 
+        id: 2, 
+        name: 'Microtek 700 watt inverter', 
+        price: 3499 / conversionRate, 
+        images: [
+            'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/51I-YcUjLQL._SL1500_.jpg',
+            'https://example.com/inverter-back.jpg',
+            'https://example.com/inverter-packaging.jpg'
+        ]
+    },
+    { 
+        id: 3, 
+        name: 'Portable Lint Remover', 
+        price: 199 / conversionRate, 
+        images: [
+            'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/81JesWfSLHL._AC_SL1500_.jpg',
+            'https://example.com/lint-remover-side.jpg',
+            'https://example.com/lint-remover-demo.jpg'
+        ]
+    }
+];
 
     // Cart Management
     const cart = [];
