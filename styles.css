@@ -67,6 +67,11 @@ header .theme-toggle {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+    transition: transform 0.2s; /* For a smooth resizing effect */
+}
+
+.product-list .product-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the product on hover */
 }
 
 .modal {
@@ -122,5 +127,10 @@ header .theme-toggle {
 
     .product-list {
         grid-template-columns: 1fr;
+    }
+
+    .product-list .product-item {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 5px; /* Adjust padding for smaller screens */
     }
 }
