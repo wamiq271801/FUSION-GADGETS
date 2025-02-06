@@ -62,9 +62,13 @@ document.addEventListener("DOMContentLoaded", function () {
             name: 'Realme Wired Earphone', 
             price: 199 / conversionRate, 
             images: [
-                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphone.png',
-                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphones%202.png',
-                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphone%203.jpg'
+                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%200.png',
+                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%201.png',
+                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%202.png',
+                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%203.png',
+                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%204.png',
+                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%205.png',
+                'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%206.png',
             ]
         },
         { 
