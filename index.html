@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future E-Commerce</title>
+    <!-- Include the Orbitron font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <!-- Link to the CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="logo-container">
+            <!-- Replace with your logo image URL -->
             <img src="https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/logo.png" alt="Logo">
         </div>
         <div class="search-container">
@@ -19,27 +23,32 @@
         <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
     </header>
 
+    <!-- Main Content -->
     <main>
-        <section id="home" class="center-text">
-            <h2>Welcome to Future E-Commerce</h2>
+        <!-- Home Section -->
+        <section id="home" class="center-text fade-in">
+            <h2>Welcome to FUSION GADGETS Store</h2>
             <p>Explore the latest gadgets and innovations for a brighter tomorrow.</p>
             <blockquote class="inspiration-quote">"Innovation distinguishes between a leader and a follower." – Steve Jobs</blockquote>
         </section>
 
-        <section id="products">
+        <!-- Products Section -->
+        <section id="products" class="fade-in">
             <h2>Our Products</h2>
             <div class="product-list" id="product-list">
                 <!-- Dynamic product items will be injected here -->
             </div>
         </section>
 
-        <section id="cart-summary">
+        <!-- Cart Summary -->
+        <section id="cart-summary" class="fade-in">
             <h2>Cart Summary</h2>
-            <div id="cart-items"></div>
+            <ul id="cart-items"></ul>
             <div id="cart-total"></div>
         </section>
 
-        <section id="contact">
+        <!-- Contact Section -->
+        <section id="contact" class="fade-in">
             <h2>Contact Us</h2>
             <p>For any inquiries, please reach out to us at contact@futureecommerce.com</p>
         </section>
@@ -52,5 +61,8 @@
             <div id="modal-product-details"></div>
         </div>
     </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="scripts.js"></script>
 </body>
 </html>
