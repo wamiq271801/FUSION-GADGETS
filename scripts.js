@@ -8,13 +8,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // USD to INR Conversion Rate
+    const conversionRate = 83; // 1 USD = 83 INR
+
     // Product Data
     const products = [
-        { id: 1, name: 'Realme wired Earphone', price: 199, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphone.png' },
-        { id: 2, name: 'Microtek 700 watt inverter', price: 3499, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/51I-YcUjLQL._SL1500_.jpg' },
-        { id: 3, name: 'Portable Lint Remover Reusable Clothes Fabric Shaver for Fabrics Furniture Blue | 1 Manual Lint Remover.', price: 199, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/81JesWfSLHL._AC_SL1500_.jpg' },
-        { id: 4, name: 'Multifunctional Liquid Shoe Brush with Liquid Box, Adding Liquid Filled Brush with Soap Dispenser Press Type, Long Handle Shoe Cleaner Brush Cleaning with New Liquid Cartridge Pack of 1, Plastic', price: 249.99, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/WhatsApp%20Image%202025-01-24%20at%205.51.43%20PM%20(9).jpeg' },
-        { id: 5, name: 'Smartwatch 10 Generation with 2.09 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger, Splash Resistant (Black, 45mm)', price: 2499, image: 'https://github.com/wamiq271801/FUSION-GADGETS/blob/main/MXLJ3ref_VW_34FR+watch-case-42-aluminum-jetblack-nc-s10_VW_34FR+watch-face-42-aluminum-jetblack-s10_VW_34FR.jpeg?raw=true' },
+        { id: 1, name: 'Realme wired Earphone', price: 199 / conversionRate, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/earphone.png' },
+        { id: 2, name: 'Microtek 700 watt inverter', price: 3499 / conversionRate, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/51I-YcUjLQL._SL1500_.jpg' },
+        { id: 3, name: 'Portable Lint Remover', price: 199 / conversionRate, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/81JesWfSLHL._AC_SL1500_.jpg' },
+        { id: 4, name: 'Multifunctional Liquid Shoe Brush', price: 249.99 / conversionRate, image: 'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/WhatsApp%20Image%202025-01-24%20at%205.51.43%20PM%20(9).jpeg' },
+        { id: 5, name: 'Smartwatch 10 Generation', price: 2499 / conversionRate, image: 'https://github.com/wamiq271801/FUSION-GADGETS/blob/main/MXLJ3ref_VW_34FR+watch-case-42-aluminum-jetblack-nc-s10_VW_34FR+watch-face-42-aluminum-jetblack-s10_VW_34FR.jpeg?raw=true' },
     ];
 
     // Cart Management
@@ -34,32 +37,32 @@ document.addEventListener('DOMContentLoaded', () => {
         const cartItems = document.getElementById('cart-items');
         const cartTotal = document.getElementById('cart-total');
 
-        if (!cartItems || !cartTotal) return; // Ensure elements exist
+        if (!cartItems || !cartTotal) return;
 
         cartItems.innerHTML = '';
         let total = 0;
 
         cart.forEach((item, index) => {
-            total += item.product.price * item.quantity;
+            const priceInRupees = item.product.price * conversionRate;
+            total += priceInRupees * item.quantity;
             const cartItem = document.createElement('li');
             cartItem.classList.add('cart-item');
             cartItem.innerHTML = `
-                ${item.product.name} x ${item.quantity} - $${(item.product.price * item.quantity).toFixed(2)}
+                ${item.product.name} x ${item.quantity} - ₹${(priceInRupees * item.quantity).toFixed(2)}
                 <button class="remove-item" data-index="${index}">Remove</button>
             `;
             cartItems.appendChild(cartItem);
         });
 
-        cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+        cartTotal.textContent = `Total: ₹${total.toFixed(2)}`;
 
-        // Add event listeners to remove buttons
         document.querySelectorAll('.remove-item').forEach(button => {
             button.addEventListener('click', removeCartItem);
         });
     }
 
     function removeCartItem(event) {
-        const index = Number(event.target.getAttribute('data-index')); // Convert to number
+        const index = Number(event.target.getAttribute('data-index'));
         if (!isNaN(index)) {
             cart.splice(index, 1);
             updateCart();
@@ -81,12 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, appearOptions);
 
-    // Function to render products
+    // Render Products
     function renderProducts(productArray) {
         const productList = document.getElementById('product-list');
-        if (!productList) return; // Ensure the element exists
+        if (!productList) return;
 
-        productList.innerHTML = ''; // Clear existing products
+        productList.innerHTML = '';
 
         if (productArray.length === 0) {
             productList.innerHTML = '<p class="no-products">No products found.</p>';
@@ -96,17 +99,17 @@ document.addEventListener('DOMContentLoaded', () => {
         productArray.forEach(product => {
             const productItem = document.createElement('div');
             productItem.classList.add('product-item', 'fade-in');
+            const priceInRupees = product.price * conversionRate;
 
             productItem.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
-                <p>$${product.price.toFixed(2)}</p>
+                <p>₹${priceInRupees.toFixed(2)}</p>
                 <input type="number" class="quantity" value="1" min="1">
                 <button class="add-to-cart">Add to Cart</button>
             `;
             productList.appendChild(productItem);
 
-            // Add to Cart Functionality
             const addToCartButton = productItem.querySelector('.add-to-cart');
             const quantityInput = productItem.querySelector('.quantity');
 
@@ -117,21 +120,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     alert('Please enter a valid quantity.');
                     return;
                 }
-
                 addToCart(product, quantity);
                 quantityInput.value = 1;
             });
 
-            // Product Modal Functionality
+            // Product Modal
             const modal = document.getElementById('product-modal');
             const modalContent = document.getElementById('modal-product-details');
-            
             productItem.addEventListener('click', (event) => {
                 if (!event.target.classList.contains('add-to-cart') && !event.target.classList.contains('quantity')) {
                     modalContent.innerHTML = `
                         <h2>${product.name}</h2>
                         <img src="${product.image}" alt="${product.name}" style="max-width: 100%; margin-bottom: 20px;">
-                        <p>Price: $${product.price.toFixed(2)}</p>
+                        <p>Price: ₹${priceInRupees.toFixed(2)}</p>
                         <p>Experience the future with the ${product.name}. Equipped with the latest technology to enhance your daily life.</p>
                     `;
                     modal.style.display = 'block';
@@ -139,13 +140,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Re-attach scroll animations
         document.querySelectorAll('.fade-in').forEach(fader => {
             appearOnScroll.observe(fader);
         });
     }
 
-    // Initial render of products
     renderProducts(products);
 
     // Search Functionality with Debounce
@@ -154,7 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleSearch() {
         const query = searchInput.value.toLowerCase().trim();
-
         clearTimeout(searchTimeout);
         searchTimeout = setTimeout(() => {
             if (query) {
@@ -167,12 +165,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchInput.addEventListener('input', handleSearch);
 
-    // Attach initial scroll animations
-    document.querySelectorAll('.fade-in').forEach(fader => {
-        appearOnScroll.observe(fader);
+    // Navbar Hide on Scroll
+    let lastScrollY = window.scrollY;
+    const navbar = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > lastScrollY && window.scrollY > 50) {
+            navbar.classList.add("hidden");
+        } else {
+            navbar.classList.remove("hidden");
+        }
+        lastScrollY = window.scrollY;
     });
 
-    // Ensure modal closes correctly
+    // Close Modal
     const modal = document.getElementById('product-modal');
     const closeModal = document.querySelector('.modal .close');
 
@@ -187,18 +193,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
-
-let lastScrollY = window.scrollY;
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > lastScrollY && window.scrollY > 50) {
-        // User is scrolling down, hide navbar
-        navbar.classList.add("hidden");
-    } else {
-        // User is scrolling up, show navbar
-        navbar.classList.remove("hidden");
-    }
-    lastScrollY = window.scrollY;
 });
