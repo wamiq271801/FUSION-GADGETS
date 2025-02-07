@@ -48,17 +48,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     {
         id: 2,
-        name: "Realme Wired Earphone",
-        price: 199,
-        description: "High-quality wired earphones with noise isolation and premium sound.",
+        name: "TX10 PRO MAX Smartwatch",
+        price: 599,
+        description: "TX10 PRO MAX Smartwatch with 1.9 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger|Black",
         images: [
-          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%200.png',
-          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%201.png',
-          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%202.png',
-          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%203.png',
-          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%204.png',
-          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%206.png',
-          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/earphone%207.png',
+          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/TX10%20Ultra.png',
+          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/TX10%20Ultra1.png',
+          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/TX10%20Ultra2.png',
+          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/TX10%20Ultra3.png',
+          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/TX10%20Ultra4.png',
+          'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/TX10%20Ultra5.png',
         ]
     }
 
