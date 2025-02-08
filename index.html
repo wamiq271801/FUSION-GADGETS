@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Futuristic E-commerce Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Home_Styles.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background-color: #1a1a1a; border-bottom: 2px solid #333; position: relative; }
@@ -16,11 +16,11 @@
         nav li { display: flex; align-items: center; }
         nav a { text-decoration: none; color: #fff; transition: color 0.3s ease; }
         nav a:hover { color: #00ffcc; }
-        .hero { position: relative; background-image: linear-gradient(to bottom, #1a1a1a, #333); background-size: 100% 300px; background-position: 0% 100%; height: 100vh; display: flex; justify-content: center; align-items: center; color: #fff; overflow: hidden; }
+        .hero { position: relative; background-image: linear-gradient(to middle, #1a1a1a, #333); background-size: 100% 500px; background-position: 0% 100%; height: 60vh; display: flex; justify-content: center; align-items: center; color: #fff; overflow: hidden; }
         .intro { text-align: center; z-index: 1; }
         .intro h1 { font-size: 48px; margin-bottom: 10px; }
-        .intro p { font-size: 18px; margin-bottom: 20px; }
-        .products { padding: 50px; }
+        .intro p { font-size: 18px; margin-bottom: 10px; }
+        .products { padding: 50px; text-align: center; }
         .categories { display: flex; flex-wrap: wrap; justify-content: center; }
         .category { background-color: #1a1a1a; color: #fff; padding: 10px 20px; margin: 10px; border-radius: 10px; cursor: pointer; }
         .category:hover { background-color: #333; }
@@ -116,7 +116,7 @@
             <img id="modalImage" src="" alt="Modal Image">
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="Home_Scripts.js"></script>
     <script>
         // Modal JavaScript
         var modal = document.getElementById("myModal");
