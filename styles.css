@@ -93,7 +93,7 @@ nav a:hover {
     text-align: center;
     animation: fadeIn 2s ease-in;
     background-image: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
-    background-size: 100% 250px;
+    background-size: 200% 1000px;
     background-position: 0% 100%;
 }
 
@@ -137,12 +137,12 @@ nav a:hover {
 .category,
 .featured-product {
     background-color: #1a1a1a;
-    padding: 15px;
+    padding: 20px; /* Increased padding for more space */
     border-radius: 15px;
     box-shadow: 0 0 10px #00ffcc;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-width: 200px;
-    max-width: 300px;
+    min-width: 250px; /* Increased from 200px */
+    max-width: 400px; /* Increased from 300px */
     cursor: pointer;
 }
 
@@ -154,8 +154,51 @@ nav a:hover {
 
 .featured-product img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
+}
+
+.categories,
+.featured-products {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.category,
+.featured-product {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #00ffcc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 250px;  /* Increased min-width */
+    max-width: 400px;  /* Increased max-width */
+    cursor: pointer;
+}
+
+.category:hover,
+.featured-product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+.featured-product img {
+    width: 100%;
+    height: auto;  /* Ensures the image scales proportionally */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .category,
+    .featured-product {
+        min-width: 200px;  /* Adjust for smaller screens */
+        max-width: 300px;
+    }
 }
 
 /* Carousel Controls */
@@ -284,42 +327,30 @@ footer .social-media {
     }
 }
 
-/* Animated Text within .intro */
-.intro {
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: linear-gradient(to bottom, #1a1a1a, #333);
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    padding: 20px;
     text-align: center;
-    margin: 50px 0;
-}
-
-.intro h1,
-.intro p {
-    opacity: 0;
-    animation: fadeInUp 2s ease forwards;
 }
 
 .intro h1 {
-    font-size: 48px;
-    color: #00ffcc;
-    animation-delay: 0s; /* Starts immediately */
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .intro p {
-    font-size: 24px;
-    color: #ffffff;
-    animation-delay: 0.5s; /* Starts after 0.5 seconds */
+    font-size: 16px;
+    margin-bottom: 10px;
 }
-
-/* Keyframes for fadeInUp animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px); /* Moves text 20px down */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0); /* Moves text to original position */
-    }
-}
-
 /* Animate "Product Categories" Heading */
 .products h2 {
     opacity: 0;
@@ -380,11 +411,12 @@ footer .social-media {
 
 /* Contact Details Section Styling */
 .contact-details {
-    padding: 50px;
+    padding: 100px;
     background-color: #1a1a1a;
     color: #fff;
-    border-radius: 10px;
-    margin: 40px 0;
+    border-radius: 8px;
+    margin: 40px auto; /* Centered horizontally */
+    width: 80%; /* Set a width to control the size */
     text-align: center;
     opacity: 0; /* Start hidden */
     animation: fadeInUp 1.5s ease forwards;
@@ -396,18 +428,19 @@ footer .social-media {
     font-size: 36px;
     margin-bottom: 20px;
     background: linear-gradient(90deg, #00ffcc, #ff00cc);
+    background-size: 200% 200%; /* Added for gradient animation */
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    animation: gradientShift 5s ease-in-out infinite;
+    animation: gradientShift 3s ease-in-out infinite;
 }
 
 /* Animate Contact Details Paragraphs */
 .contact-details p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
     opacity: 0;
-    animation: fadeInUp 1.5s ease forwards;
+    animation: fadeInUp 0.5s ease forwards;
 }
 
 /* Staggered Animation for Paragraphs */
@@ -441,62 +474,11 @@ footer .social-media {
         background-position: 0% 50%;
     }
     50% {
-        background-position: 50% 50%;
-    }
-    100% {
         background-position: 100% 50%;
     }
-}
-
-/* Styling for Email Link */
-.contact-details a {
-    color: #00ffcc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-details a:hover {
-    color: #ff00cc;
-}
-
-/* Responsive Design Adjustments */
-@media (max-width: 768px) {
-    .contact-details {
-        padding: 30px;
-    }
-
-    .contact-details h2 {
-        font-size: 28px;
-    }
-
-    .contact-details p {
-        font-size: 16px;
-    }
-}
-
-/* Keyframes for fadeInUp Animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px); /* Start 20px below */
-    }
     100% {
-        opacity: 1;
-        transform: translateY(0); /* End at original position */
-    }
-}
-
-/* Keyframes for Gradient Shift Animation */
-@keyframes gradientShift {
-    0% {
         background-position: 0% 50%;
     }
-    50% {
-        background-position: 50% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
 }
 
 /* Styling for Email Link */
@@ -524,6 +506,7 @@ footer .social-media {
         font-size: 16px;
     }
 }
+
 
 /* Accessibility for Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
@@ -566,71 +549,67 @@ footer .social-media {
 }
 
 /* Futuristic Frames Styling */
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Image Gallery Container */
 #futuristic-images {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
     margin-top: 30px;
 }
 
+/* Image Frame Styling */
 .image-frame {
+    flex: 1 1 calc(33.333% - 40px);
+    margin: 10px;
+    box-sizing: border-box;
     position: relative;
-    padding: 10px;
     border: 3px solid #00ffcc;
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
     border-radius: 15px;
+    overflow: hidden;
+    height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Image Styling */
 .image-frame img {
-    display: block;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
+/* Hover Effects */
 .image-frame:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
 }
 
-.home-label {
-    position: absolute;
-    top: 45px; /* Align with header padding */
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #1a1a1a;
-    padding: 5px 10px;
-    border: 3px solid #00ffcc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .image-frame {
+        flex: 1 1 calc(50% - 20px); /* Two frames per row */
+    }
 }
 
-.image-frame {
-    position: relative;
-    padding: 10px;
-    border: 3px solid #00ffcc;
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 200px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height */
-    overflow: hidden; /* Prevent overflow */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire frame while maintaining aspect ratio */
-    border-radius: 10px;
-    cursor: pointer;
+@media (max-width: 600px) {
+    .image-frame {
+        flex: 1 1 100%; /* One frame per row */
+        margin: 5px 0; /* Adjust margin for mobile */
+    }
 }
 
 .hero {
@@ -688,5 +667,5 @@ footer .social-media {
 /* Subtitle */
 .listing-subtitle {
     font-size: 18px;
-    color: white;
+    color: cyan;
 }
