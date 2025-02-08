@@ -99,37 +99,38 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #2c2c2c;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
     max-width: 90%;
     max-height: 90%;
+    width: 80vw;
+    height: 80vh;
     z-index: 10;
 }
 
-.popup-content {
-    text-align: center;
-}
-
 .popup-content img {
-    max-width: 100%;
-    max-height: 80vh;
+    width: 100%;
+    height: auto;
+    max-height: 90%;
     border-radius: 10px;
     object-fit: contain;
 }
 
 .popup-content p {
-    margin-top: 10px;
+    font-size: 14px; /* Smaller text */
+    margin-top: 5px;
     color: #00ffff;
+    text-align: center;
 }
 
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 10px;
-    font-size: 20px;
+    right: 20px;
+    font-size: 36px;
     cursor: pointer;
-    color: white;
+    color: cyan;
 }
 
 .blurred {
