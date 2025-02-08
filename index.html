@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Futuristic E-commerce Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>FUSION GADGETS</title>
+    <link rel="stylesheet" href="Home_Styles.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background-color: #1a1a1a; border-bottom: 2px solid #333; position: relative; }
@@ -20,14 +20,14 @@
         .intro { text-align: center; z-index: 1; }
         .intro h1 { font-size: 48px; margin-bottom: 10px; }
         .intro p { font-size: 18px; margin-bottom: 10px; }
-        .products { padding: 50px; text-align: center; }
+        .products { padding: 30px; text-align: center; }
         .categories { display: flex; flex-wrap: wrap; justify-content: center; }
         .category { background-color: #1a1a1a; color: #fff; padding: 10px 20px; margin: 10px; border-radius: 10px; cursor: pointer; }
         .category:hover { background-color: #333; }
         .featured-products { padding: 50px; }
         #futuristic-images { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 30px; }
         .image-frame { position: relative; padding: 10px; border: 3px solid #00ffcc; box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); border-radius: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .image-frame img { display: block; width: 200px; height: auto; border-radius: 10px; cursor: pointer; }
+        .image-frame img { display: block; width: 100%; height: 100%; border-radius: 10px; cursor: pointer; }
         .image-frame:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(0, 255, 204, 0.8); }
         /* Modal styling */
         .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.7); }
@@ -48,7 +48,7 @@
             .logo img { height: 80px; margin-right: 10px; }
             .home-label { font-size: 24px; }
             nav ul { flex-direction: column; gap: 15px; }
-            .hero { height: 50vh; }
+            .hero { height: 30vh; }
             .intro h1 { font-size: 36px; }
             .intro p { font-size: 16px; }
             .products { padding: 30px; }
@@ -117,7 +117,7 @@
             <div class="image-frame"><img src="https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/refs/heads/main/Home_Images/Home%20(1).png" alt="Image 1"></div>
             <div class="image-frame"><img src="https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/refs/heads/main/Home_Images/Home%20(1).png" alt="Image 1"></div>
             <div class="image-frame"><img src="https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/refs/heads/main/Home_Images/Home%20(1).png" alt="Image 1"></div>
-
+            <div class="image-frame"><img src="https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/refs/heads/main/Home_Images/Home%20(1).png" alt="Image 1"></div>
 
         </section>
     </main>
@@ -136,7 +136,7 @@
             <img id="modalImage" src="" alt="Modal Image">
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="Home_Scripts.js"></script>
     <script>
         // Modal JavaScript
         var modal = document.getElementById("myModal");
