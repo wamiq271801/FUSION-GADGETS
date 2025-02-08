@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Futuristic E-commerce Webpage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Home_Styles.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         header { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background-color: #1a1a1a; border-bottom: 2px solid #333; position: relative; }
@@ -41,6 +41,26 @@
         .contact-info { margin-bottom: 20px; }
         .contact-info p { margin-bottom: 10px; }
         .social-media { margin-top: 20px; }
+
+        /* Media query for mobile screens */
+        @media (max-width: 600px) {
+            header { flex-direction: column; padding: 10px 20px; }
+            .logo img { height: 80px; margin-right: 10px; }
+            .home-label { font-size: 24px; }
+            nav ul { flex-direction: column; gap: 15px; }
+            .hero { height: 50vh; }
+            .intro h1 { font-size: 36px; }
+            .intro p { font-size: 16px; }
+            .products { padding: 30px; }
+            .categories { flex-direction: column; align-items: center; }
+            .category { padding: 8px 15px; margin: 8px; }
+            .featured-products { padding: 30px; }
+            #futuristic-images { gap: 15px; margin-top: 20px; }
+            .image-frame { width: 150px; padding: 5px; }
+            .image-frame img { width: 100%; height: auto; }
+            .modal-content { margin: 10% auto; }
+            footer { padding: 15px; }
+        }
     </style>
 </head>
 <body>
