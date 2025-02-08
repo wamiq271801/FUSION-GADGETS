@@ -1,272 +1,324 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUSION GADGETS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: white;
-            margin: 0;
-            padding: 0;
-            transition: filter 0.3s;
-        }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #1e1e1e;
-            padding: 10px 20px;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-        }
-
-        .header-logo img {
-            max-height: 50px;
-        }
-
-        .header-content {
-            display: flex;
-            flex-grow: 1;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .store-name {
-            font-size: 24px;
-            font-weight: bold;
-            color: #00ffff;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .tile {
-            background: #1e1e1e;
-            border-radius: 10px;
-            height: 400px;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-            transition: transform 0.3s;
-            overflow: hidden;
-        }
-
-        .tile:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(0, 255, 255, 1);
-        }
-
-        .tile img {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-
-        .tile h3 {
-            color: #00ffff;
-            text-align: center;
-        }
-
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: #2c2c2c;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
-            max-width: 90%;
-            max-height: 90%;
-            width: 80vw;
-            height: 80vh;
-            z-index: 10;
-            overflow-y: auto;
-        }
-
-        .popup-content img {
-            width: 100%;
-            max-height: 60%;
-            border-radius: 10px;
-            object-fit: contain;
-        }
-
-        .popup-content p {
-            font-size: 25px;
-            margin-top: 10px;
-            color: #00ffff;
-            text-align: center;
-        }
-
-        .popup-long-desc {
-            font-size: 18px;
-            color: white;
-            text-align: left;
-            margin-top: 15px;
-            padding: 10px;
-            background: #1e1e1e;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 36px;
-            cursor: pointer;
-            color: cyan;
-        }
-
-        .blurred {
-            filter: blur(5px);
-            pointer-events: none;
-        }
-
-        /* Footer */
-        footer {
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .new {
-            background: linear-gradient(45deg, #fbfafa, cyan);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 48px;
-            font-weight: bold;
-        }
-
-        .new2 {
-            background: linear-gradient(45deg, #fbfafa, cyan);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 18px;
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <div class="header" id="main-content">
-        <div class="header-logo">
-            <img src="https://github.com/wamiq271801/FUSION-GADGETS/blob/main/logo.png?raw=true" alt="Fusion Gadgets Logo">
-        </div>
-        <div class="header-content">
-            <div class="store-name">FUSION GADGETS</div>
-            <h4 class="contact-link"> <a href="#contact-details">Contact Us</a></div></h4>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FUSION GADGETS</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #121212;
+                color: white;
+                margin: 0;
+                padding: 0;
+                transition: filter 0.3s;
+            }
+    
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #1e1e1e;
+                padding: 10px 20px;
+                box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            }
+    
+            .header-logo img {
+                max-height: 50px;
+            }
+    
+            .header-content {
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            .store-name {
+                font-size: 24px;
+                font-weight: bold;
+                color: #00ffff;
+            }
+    
+            .container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+    
+            .tile {
+                background: #1e1e1e;
+                border-radius: 10px;
+                height: 400px;
+                box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+                transition: transform 0.3s;
+                overflow: hidden;
+            }
+    
+            .tile:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 30px rgba(0, 255, 255, 1);
+            }
+    
+            .tile img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+    
+            .tile h3 {
+                color: #00ffff;
+                text-align: center;
+            }
+    
+            .popup {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #2c2c2c;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+                max-width: 90%;
+                max-height: 90%;
+                width: 80vw;
+                height: 80vh;
+                z-index: 10;
+                overflow-y: auto;
+            }
+    
+            .popup-content img {
+                width: 100%;
+                max-height: 60%;
+                border-radius: 10px;
+                object-fit: contain;
+            }
+    
+            .popup-content p {
+                font-size: 26px;
+                margin-top: 10px;
+                color: #00ffff;
+                text-align: center;
+            }
+    
+            #popup-price {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff2c2c;
+        text-align: center;
+        margin-top: 5px;
+            }
+    
+            .popup-long-desc {
+                font-size: 18px;
+                color: white;
+                text-align: left;
+                margin-top: 15px;
+                padding: 10px;
+                background: #1e1e1e;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+            }
+    
+            .close-btn {
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                font-size: 36px;
+                cursor: pointer;
+                color: cyan;
+            }
+    
+            .blurred {
+                filter: blur(5px);
+                pointer-events: none;
+            }
+    
+            /* Footer */
+            footer {
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+    
+            .new {
+                background: linear-gradient(45deg, #fbfafa, cyan);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 48px;
+                font-weight: bold;
+            }
+    
+            .new2 {
+                background: linear-gradient(45deg, #fbfafa, cyan);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 18px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header" id="main-content">
+            <div class="header-logo">
+                <img src="https://github.com/wamiq271801/FUSION-GADGETS/blob/main/logo.png?raw=true" alt="Fusion Gadgets Logo">
             </div>
-    </div>
-
-    <div class="container" id="container"></div>
-
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <span class="close-btn" onclick="hidePopup()">&times;</span>
-            <img id="popup-img" src="" alt="">
-            <p id="popup-desc"></p>
-            <div id="popup-long-desc" class="popup-long-desc"></div>
+            <div class="header-content">
+                <div class="store-name">FUSION GADGETS</div>
+                <h4 class="contact-link"> <a href="#contact-details">Contact Us</a></div></h4>
+                </div>
         </div>
-    </div>
-
-    <footer id="contact-details">
-        <div class="tile-background backlit"></div>
-        <div class="contact">
-            <h2 class="new">Contact Us</h2><br>
-            <p class="new2">Address: 3/4, Bazdaripura, Bahraich (Uttar Pradesh) - 271801</p>
-            <p class="new2">Phone: +91 88587 63010</p>
-            <p class="new2">Email: store.fusiongadgets271801@gmail.com</p>
+    
+        <div class="container" id="container"></div>
+    
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="hidePopup()">&times;</span>
+                <img id="popup-img" src="" alt="">
+                <p id="popup-desc"></p>
+                <p id="popup-price"></p>
+                <div id="popup-long-desc" class="popup-long-desc"></div>
+            </div>
         </div>
-    </footer>
+    
+        <footer id="contact-details">
+            <div class="tile-background backlit"></div>
+            <div class="contact">
+                <h2 class="new">Contact Us</h2><br>
+                <p class="new2">Address: 3/4, Bazdaripura, Bahraich (Uttar Pradesh) - 271801</p>
+                <p class="new2">Phone: +91 88587 63010</p>
+                <p class="new2">Email: store.fusiongadgets271801@gmail.com</p>
+            </div>
+        </footer>
+    
+        <script>
+            const container = document.getElementById('container');
+            const images = [
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(1).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(2).png",
+                    desc: "Short description of Image 2",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(3).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },       
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(5).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(6).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(7).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(8).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(9).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(10).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(10).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(11).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(12).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
+                {
+                    src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(13).png",
+                    desc: "Short description of Image 1",
+                    price: "₹1,999",
+                    longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
+                },
 
-    <script>
-        const container = document.getElementById('container');
-        const images = [
-            {
-                src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(1).png",
-                desc: "Short description of Image 1",
-                longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
-            },
-            {
-                src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(2).png",
-                desc: "Short description of Image 2",
-                longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
-            },
-            {
-                src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(3).png",
-                desc: "Short description of Image 1",
-                longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
-            },       
-            {
-                src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
-                desc: "Short description of Image 1",
-                longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
-            },
-            {
-                src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(5).png",
-                desc: "Short description of Image 1",
-                longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
-            },
-            {
-                src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(6).png",
-                desc: "Short description of Image 1",
-                longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
-            },
-            {
-                src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(7).png",
-                desc: "Short description of Image 1",
-                longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
-            },
-            {
-                src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(8).png",
-                desc: "Short description of Image 1",
-                longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
-            },
-            {
-                src: "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(9).png",
-                desc: "Short description of Image 1",
-                longDesc: "This is a detailed description of Image 1. It explains the features, uses, and any additional information the viewer might need to know. This section can be as long as needed."
-            },
-        ];
 
+            ];
+    
         images.forEach((item, index) => {
-            const tile = document.createElement('div');
-            tile.classList.add('tile');
-            tile.onclick = () => showPopup(item.src, item.desc, item.longDesc);
+        const tile = document.createElement('div');
+        tile.classList.add('tile');
+        tile.onclick = () => showPopup(item.src, item.desc, item.price, item.longDesc);
 
-            const img = document.createElement('img');
-            img.src = item.src;
-            img.alt = `Image ${index + 1}`;
+        const img = document.createElement('img');
+        img.src = item.src;
+        img.alt = `Image ${index + 1}`;
 
-            const h3 = document.createElement('h3');
-            h3.textContent = `Image ${index + 1}`;
+        const h3 = document.createElement('h3');
+        h3.textContent = `Image ${index + 1}`;
 
-            tile.appendChild(img);
-            tile.appendChild(h3);
-            container.appendChild(tile);
-        });
+        tile.appendChild(img);
+        tile.appendChild(h3);
+        container.appendChild(tile);
+    });
 
-        function showPopup(imgSrc, desc, longDesc) {
-            document.getElementById('popup-img').src = imgSrc;
-            document.getElementById('popup-desc').innerText = desc;
-            document.getElementById('popup-long-desc').innerText = longDesc;
-            document.getElementById('popup').style.display = 'flex';
-            document.getElementById('main-content').classList.add('blurred');
-            document.getElementById('container').classList.add('blurred');
-        }
+    function showPopup(imgSrc, desc, price, longDesc) {
+        document.getElementById('popup-img').src = imgSrc;
+        document.getElementById('popup-desc').innerText = desc;
+        document.getElementById('popup-price').innerText = `Price: ${price}`;
+        document.getElementById('popup-long-desc').innerText = longDesc;
+        document.getElementById('popup').style.display = 'flex';
+        document.getElementById('main-content').classList.add('blurred');
+        document.getElementById('container').classList.add('blurred');
+    }
 
-        function hidePopup() {
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('main-content').classList.remove('blurred');
-            document.getElementById('container').classList.remove('blurred');
-        }
+    function hidePopup() {
+        document.getElementById('popup').style.display = 'none';
+        document.getElementById('main-content').classList.remove('blurred');
+        document.getElementById('container').classList.remove('blurred');
+    }
     </script>
-</body>
-</html>
+    </body>
+    </html>
