@@ -1,80 +1,80 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUSION GADGETS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: white;
-            margin: 0;
-            padding: 0;
-            transition: filter 0.3s;
-        }
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #1e1e1e;
-            padding: 10px 20px;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-        }
-
-        .header-logo img {
-            max-height: 50px;
-        }
-
-        .header-content {
-            display: flex;
-            flex-grow: 1;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .store-name {
-            font-size: 24px;
-            font-weight: bold;
-            color: #00ffff;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .tile {
-            background: #1e1e1e;
-            border-radius: 10px;
-            height: 400px;
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-            transition: transform 0.3s;
-            overflow: hidden;
-        }
-
-        .tile:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(0, 255, 255, 1);
-        }
-
-        .tile img {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-
-        .tile h3 {
-            color: #00ffff;
-            text-align: center;
-        }
-
-        .popup {
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FUSION GADGETS</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #121212;
+                color: white;
+                margin: 0;
+                padding: 0;
+                transition: filter 0.3s;
+            }
+    
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #1e1e1e;
+                padding: 10px 20px;
+                box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+            }
+    
+            .header-logo img {
+                max-height: 50px;
+            }
+    
+            .header-content {
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            .store-name {
+                font-size: 24px;
+                font-weight: bold;
+                color: #00ffff;
+            }
+    
+            .container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+    
+            .tile {
+                background: #1e1e1e;
+                border-radius: 10px;
+                height: 300px;
+                box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+                transition: transform 0.3s;
+                overflow: hidden;
+            }
+    
+            .tile:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 30px rgba(0, 255, 255, 1);
+            }
+    
+            .tile img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+    
+            .tile h3 {
+                color: #00ffff;
+                text-align: center;
+            }
+    
+            .popup {
                 display: none;
                 position: fixed;
                 top: 50%;
@@ -90,204 +90,178 @@
                 height: 80vh;
                 z-index: 10;
                 overflow-y: auto;
-                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                opacity 0.3s ease-out; /* Smooth transition */
-                backdrop-filter: blur(5px); /* Add blur effect to background */
+            }
+    
+            .popup-content img {
+                width: 100%;
+                max-height: 60%;
+                border-radius: 10px;
+                object-fit: contain;
+            }
+    
+            .popup-content p {
+                font-size: 26px;
+                margin-top: 10px;
+                color: #00ffff;
+                text-align: center;
+            }
+    
+            #popup-price {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff2c2c;
+        text-align: center;
+        margin-top: 5px;
+            }
+    
+            .popup-long-desc {
+                font-size: 18px;
+                color: white;
+                text-align: left;
+                margin-top: 15px;
+                padding: 10px;
+                background: #1e1e1e;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+            }
+    
+            .close-button {
+
+         position: absolute;
+         top: 10px;  /* Adjust as needed */
+         right: 10px; /* Adjust as needed */
+         z-index: 9999; /* Ensures it stays on top */
+         background: rgba(0, 0, 0, 0.7); /* Optional: Adds a subtle background */
+         color: white;
+         border: none;
+         padding: 5px 10px;
+         cursor: pointer;
+         font-size: 24px;
+         border-radius: 50%;
 
             }
+    
+            .blurred {
+                filter: blur(5px);
+                pointer-events: none;
+            }
+    
+            /* Footer */
+            footer {
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+    
+            .new {
+                background: linear-gradient(45deg, #fbfafa, cyan);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 48px;
+                font-weight: bold;
+            }
+    
+            .new2 {
+                background: linear-gradient(45deg, #fbfafa, cyan);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 18px;
+                font-weight: bold;
+            }
 
-/* Active State: Expands with Bounce Effect */
-.popup.active {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-}
-
-/* Closing Animation */
-.popup.closing {
-    transform: translate(-50%, -50%) scale(0.7);
-    opacity: 0;
-}
-
-        .popup-content img {
-            width: 100%;
-            max-height: 60%;
-            border-radius: 10px;
-            object-fit: contain;
-        }
-
-        .popup img {
-    max-width: 100%;
-    max-height: 90vh; /* Ensure it doesn't exceed viewport height */
-    object-fit: contain; /* Keeps aspect ratio */
-    display: block;
-    margin: auto;
-    }
-
-
-        .popup-content p {
-            font-size: 26px;
-            margin-top: 10px;
-            color: #00ffff;
-            text-align: center;
-        }
-
-        #popup-price {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff2c2c;
+            .welcome-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 5px;
-        }
-
-        .popup-long-desc {
-            font-size: 18px;
-            color: white;
-            text-align: left;
-            margin-top: 15px;
-            padding: 10px;
-            background: #1e1e1e;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-        }
-
-        .close-button {
-position: fixed; /* Fix it to the viewport */
-top: 20px; /* Position it at the top */
-right: 20px; /* Position it at the right */
-z-index: 10000; /* Ensure it's above everything */
-background: rgba(0, 0, 0, 0.7);
-color: white;
-border: none;
-padding: 10px 15px;
-cursor: pointer;
-font-size: 20px;
-border-radius: 50%;
-transition: 0.3s;
-}
-
-.close-button:hover {
-background: cyan; /* Highlight effect */
-}
-
-        .blurred {
-            filter: blur(5px);
-            pointer-events: none;
-        }
-
-        /* Footer */
-        footer {
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .new {
-            background: linear-gradient(45deg, #fbfafa, cyan);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 48px;
-            font-weight: bold;
-        }
-
-        .new2 {
-            background: linear-gradient(45deg, #fbfafa, cyan);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        .welcome-tile {
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-font-size: 15px;
-font-weight: bold;
-color: #00ffff;
-background: #1e1e1e;
-box-shadow: 0 0 20px cyan;
-border-radius: 10px;
-padding: 20px;
-margin: 20px auto;
-width: 80%;
-max-width: 600px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00ffff;
+    background: #1e1e1e;
+    box-shadow: 0 0 20px cyan;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
 }
 
 .carousel {
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .carousel img {
-width: 100%;
-max-height: 60%;
-border-radius: 10px;
-object-fit: contain;
+    width: 100%;
+    max-height: 60%;
+    border-radius: 10px;
+    object-fit: contain;
 }
 
 .prev-btn, .next-btn {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background: rgba(0, 255, 255, 0.7);
-border: none;
-color: black;
-font-size: 24px;
-font-weight: bold;
-cursor: pointer;
-padding: 10px;
-border-radius: 50%;
-transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 255, 255, 0.7);
+    border: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
 }
 
 .prev-btn:hover, .next-btn:hover {
-background: rgba(0, 255, 255, 1);
+    background: rgba(0, 255, 255, 1);
 }
 
 .prev-btn {
-left: 10px;
+    left: 10px;
 }
 
 .next-btn {
-right: 10px;
+    right: 10px;
 }
 
-    </style>
-</head>
-<body>
-    <div class="header" id="main-content">
-        <div class="header-logo">
-            <img src="https://github.com/wamiq271801/FUSION-GADGETS/blob/main/logo.png?raw=true" alt="Fusion Gadgets Logo">
-        </div>
-        <div class="header-content">
-            <div class="store-name">FUSION GADGETS</div>
-            <h4 class="contact-link"> <a href="#contact-details">Contact Us</a></div></h4>
+        </style>
+    </head>
+    <body>
+        <div class="header" id="main-content">
+            <div class="header-logo">
+                <img src="https://github.com/wamiq271801/FUSION-GADGETS/blob/main/logo.png?raw=true" alt="Fusion Gadgets Logo">
             </div>
+            <div class="header-content">
+                <div class="store-name">FUSION GADGETS</div>
+                <h4 class="contact-link"> <a href="#contact-details">Contact Us</a></div></h4>
+                </div>
 
-            <div class="welcome-tile">
-                <h2>Welcome To Our Store</h2>
-            </div>
+                <div class="welcome-tile">
+                    <h2>Welcome To Our Store</h2>
+                </div>
+                
+        </div>
+    
+        <div class="container" id="container"></div>
+    
+        <div class="popup" id="popup">
+            <div class="popup-content">
+            <button class="close-button" onclick="hidePopup()">&times;</button>                
+                <div class="carousel">
+                    <button class="prev-btn" onclick="prevImage()">&#10094;</button>
+                    <img id="popup-img" src="" alt="">
+                    <button class="next-btn" onclick="nextImage()">&#10095;</button>
+                </div>
             
-    </div>
-    <div class="container" id="container"></div>
-
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <button class="close-button" onclick="hidePopup()">X</button>
-            <button class="prev-btn" onclick="prevImage()">&#10094;</button>
-            <div class="carousel">
-                <img id="popup-img" src="" alt="">
-                <button class="next-btn" onclick="nextImage()">&#10095;</button>
+                <p id="popup-desc"></p>
+                <p id="popup-price"></p>
+                <div id="popup-long-desc" class="popup-long-desc"></div>
             </div>
-            <p id="popup-desc"></p>
-            <p id="popup-price"></p>
-            <div id="popup-long-desc" class="popup-long-desc"></div>
-        </div>
-    </div>
-                        
+            </div>
+    
         <footer id="contact-details">
             <div class="tile-background backlit"></div>
             <div class="contact">
@@ -299,8 +273,8 @@ right: 10px;
         </footer>
     
         <script>
-const container = document.getElementById('container');
-const images = [
+            const container = document.getElementById('container');
+            const images = [
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(1).png",
@@ -309,7 +283,7 @@ const images = [
         ],
         desc: "Short description of Image 1",
         price: "₹1,999",
-        longDesc: "This is a detailed description of Image 1. It provides more context and background information about the image."
+        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
     },
     {
         srcs: [
@@ -318,8 +292,9 @@ const images = [
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2."
+        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
     },
+
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
@@ -327,8 +302,9 @@ const images = [
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2."
+        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
     },
+
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
@@ -336,8 +312,9 @@ const images = [
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2."
+        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
     },
+
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
@@ -345,8 +322,9 @@ const images = [
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2."
+        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
     },
+
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
@@ -354,19 +332,29 @@ const images = [
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2."
-    }
+        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
+    },
+
+    {
+        srcs: [
+            "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
+            "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(5).png"
+        ],
+        desc: "Short description of Image 2",
+        price: "₹2,499",
+        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
+    },
+
 ];
 
 images.forEach((item, index) => {
     const tile = document.createElement('div');
     tile.classList.add('tile');
-    tile.onclick = () => showPopup(item.srcs, item.desc, item.price, item.longDesc);
+    tile.onclick = () => showPopup(item.srcs, item.desc, item.price, item.longDesc);  // Pass all images
 
     const img = document.createElement('img');
-    img.src = item.srcs[0];
+    img.src = item.srcs[0];  // Show first image as thumbnail
     img.alt = `Image ${index + 1}`;
-    img.loading = "lazy"; // Smooth lazy loading
 
     const h3 = document.createElement('h3');
     h3.textContent = `Image ${index + 1}`;
@@ -376,34 +364,21 @@ images.forEach((item, index) => {
     container.appendChild(tile);
 });
 
-let currentImages = [];
-let currentImageIndex = 0;
+
+    let currentImages = [];
+    let currentImageIndex = 0;
 
 function showPopup(imgSrcs, desc, price, longDesc) {
-    if (document.getElementById('popup').classList.contains('active')) return; // Prevent reopening
-
-    currentImages = imgSrcs;
+    currentImages = imgSrcs;  // Store images in an array
     currentImageIndex = 0;
 
-    const popup = document.getElementById('popup');
     document.getElementById('popup-img').src = currentImages[currentImageIndex];
     document.getElementById('popup-desc').innerText = desc;
     document.getElementById('popup-price').innerText = `Price: ${price}`;
-
-    const longDescContainer = document.getElementById('popup-long-desc');
-    longDescContainer.style.display = longDesc ? "block" : "none"; // Hide if empty
-    longDescContainer.innerText = longDesc;
-
-    popup.style.display = 'flex';
-
-    setTimeout(() => {
-        popup.classList.add('active');
-    }, 10);
-
+    document.getElementById('popup-long-desc').innerText = longDesc;
+    document.getElementById('popup').style.display = 'flex';
     document.getElementById('main-content').classList.add('blurred');
     document.getElementById('container').classList.add('blurred');
-
-    document.addEventListener('keydown', handleKeyEvents); // Add keyboard controls
 }
 
 function prevImage() {
@@ -420,27 +395,11 @@ function nextImage() {
     }
 }
 
-function hidePopup() {
-    const popup = document.getElementById('popup');
-    popup.classList.add('closing');
-
-    setTimeout(() => {
-        popup.style.display = 'none';
-        popup.classList.remove('active', 'closing');
+    function hidePopup() {
+        document.getElementById('popup').style.display = 'none';
         document.getElementById('main-content').classList.remove('blurred');
         document.getElementById('container').classList.remove('blurred');
-        document.removeEventListener('keydown', handleKeyEvents); // Remove keyboard controls
-    }, 400);
-}
-
-function handleKeyEvents(event) {
-    if (event.key === "ArrowLeft") prevImage();
-    if (event.key === "ArrowRight") nextImage();
-    if (event.key === "Escape") hidePopup();
-}
-
-</script>
-
-</body>
-
-</html>
+    }
+    </script>
+    </body>
+    </html>
