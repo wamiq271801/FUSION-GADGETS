@@ -75,22 +75,38 @@
         }
 
         .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: #2c2c2c;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
-            max-width: 90%;
-            max-height: 90%;
-            width: 80vw;
-            height: 80vh;
-            z-index: 10;
-            overflow-y: auto;
-        }
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #2c2c2c;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 30px rgba(0, 255, 255, 0.7);
+                max-width: 90%;
+                max-height: 90%;
+                width: 80vw;
+                height: 80vh;
+                z-index: 10;
+                overflow-y: auto;
+                transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 0.3s ease-out; /* Smooth transition */
+                backdrop-filter: blur(5px); /* Add blur effect to background */
+
+            }
+
+/* Active State: Expands with Bounce Effect */
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+/* Closing Animation */
+.popup.closing {
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0;
+}
 
         .popup-content img {
             width: 100%;
@@ -98,6 +114,15 @@
             border-radius: 10px;
             object-fit: contain;
         }
+
+        .popup img {
+    max-width: 100%;
+    max-height: 90vh; /* Ensure it doesn't exceed viewport height */
+    object-fit: contain; /* Keeps aspect ratio */
+    display: block;
+    margin: auto;
+    }
+
 
         .popup-content p {
             font-size: 26px;
@@ -274,8 +299,8 @@ right: 10px;
         </footer>
     
         <script>
-            const container = document.getElementById('container');
-            const images = [
+const container = document.getElementById('container');
+const images = [
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(1).png",
@@ -284,7 +309,7 @@ right: 10px;
         ],
         desc: "Short description of Image 1",
         price: "₹1,999",
-        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
+        longDesc: "This is a detailed description of Image 1. It provides more context and background information about the image."
     },
     {
         srcs: [
@@ -293,9 +318,8 @@ right: 10px;
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
+        longDesc: "This is a detailed description of Image 2."
     },
-
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
@@ -303,9 +327,8 @@ right: 10px;
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
+        longDesc: "This is a detailed description of Image 2."
     },
-
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
@@ -313,9 +336,8 @@ right: 10px;
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
+        longDesc: "This is a detailed description of Image 2."
     },
-
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
@@ -323,9 +345,8 @@ right: 10px;
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
+        longDesc: "This is a detailed description of Image 2."
     },
-
     {
         srcs: [
             "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
@@ -333,29 +354,19 @@ right: 10px;
         ],
         desc: "Short description of Image 2",
         price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
-    },
-
-    {
-        srcs: [
-            "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(4).png",
-            "https://raw.githubusercontent.com/wamiq271801/FUSION_GADGETS/main/images/Home%20(5).png"
-        ],
-        desc: "Short description of Image 2",
-        price: "₹2,499",
-        longDesc: "This is a detailed description of Image 2. It provides more context and background information about the image, making it useful for those looking for in-depth details."
-    },
-
+        longDesc: "This is a detailed description of Image 2."
+    }
 ];
 
 images.forEach((item, index) => {
     const tile = document.createElement('div');
     tile.classList.add('tile');
-    tile.onclick = () => showPopup(item.srcs, item.desc, item.price, item.longDesc);  // Pass all images
+    tile.onclick = () => showPopup(item.srcs, item.desc, item.price, item.longDesc);
 
     const img = document.createElement('img');
-    img.src = item.srcs[0];  // Show first image as thumbnail
+    img.src = item.srcs[0];
     img.alt = `Image ${index + 1}`;
+    img.loading = "lazy"; // Smooth lazy loading
 
     const h3 = document.createElement('h3');
     h3.textContent = `Image ${index + 1}`;
@@ -365,21 +376,34 @@ images.forEach((item, index) => {
     container.appendChild(tile);
 });
 
-
-    let currentImages = [];
-    let currentImageIndex = 0;
+let currentImages = [];
+let currentImageIndex = 0;
 
 function showPopup(imgSrcs, desc, price, longDesc) {
-    currentImages = imgSrcs;  // Store images in an array
+    if (document.getElementById('popup').classList.contains('active')) return; // Prevent reopening
+
+    currentImages = imgSrcs;
     currentImageIndex = 0;
 
+    const popup = document.getElementById('popup');
     document.getElementById('popup-img').src = currentImages[currentImageIndex];
     document.getElementById('popup-desc').innerText = desc;
     document.getElementById('popup-price').innerText = `Price: ${price}`;
-    document.getElementById('popup-long-desc').innerText = longDesc;
-    document.getElementById('popup').style.display = 'flex';
+
+    const longDescContainer = document.getElementById('popup-long-desc');
+    longDescContainer.style.display = longDesc ? "block" : "none"; // Hide if empty
+    longDescContainer.innerText = longDesc;
+
+    popup.style.display = 'flex';
+
+    setTimeout(() => {
+        popup.classList.add('active');
+    }, 10);
+
     document.getElementById('main-content').classList.add('blurred');
     document.getElementById('container').classList.add('blurred');
+
+    document.addEventListener('keydown', handleKeyEvents); // Add keyboard controls
 }
 
 function prevImage() {
@@ -397,11 +421,26 @@ function nextImage() {
 }
 
 function hidePopup() {
-        document.getElementById('popup').style.display = 'none';
+    const popup = document.getElementById('popup');
+    popup.classList.add('closing');
+
+    setTimeout(() => {
+        popup.style.display = 'none';
+        popup.classList.remove('active', 'closing');
         document.getElementById('main-content').classList.remove('blurred');
         document.getElementById('container').classList.remove('blurred');
-    }
+        document.removeEventListener('keydown', handleKeyEvents); // Remove keyboard controls
+    }, 400);
+}
 
-    </script>
-    </body>
-    </html>
+function handleKeyEvents(event) {
+    if (event.key === "ArrowLeft") prevImage();
+    if (event.key === "ArrowRight") nextImage();
+    if (event.key === "Escape") hidePopup();
+}
+
+</script>
+
+</body>
+
+</html>
