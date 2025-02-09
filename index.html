@@ -226,9 +226,109 @@
     right: 10px;
 }
 
+            /* Fullscreen Loader */
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Futuristic screen container */
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Monitor Design */
+.monitor {
+    width: 200px;
+    height: 120px;
+    background: linear-gradient(135deg, #00ffff, #0044ff);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 15px cyan;
+}
+
+/* Loading bar inside the monitor */
+.loading-bar {
+    width: 80%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-bar::before {
+    content: "";
+    width: 30%;
+    height: 100%;
+    background: cyan;
+    position: absolute;
+    left: -30%;
+    animation: loading 1.5s infinite linear;
+}
+
+/* Mobile Phone Design */
+.mobile {
+    width: 80px;
+    height: 140px;
+    background: linear-gradient(135deg, #00ffff, #0044ff);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 15px cyan;
+}
+
+/* Circular loading animation inside mobile */
+.loading-circle {
+    width: 30px;
+    height: 30px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid cyan;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+}
+
+/* Animations */
+@keyframes loading {
+    0% { left: -30%; }
+    100% { left: 100%; }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
         </style>
     </head>
     <body>
+
+<div id="preloader">
+    <div class="screen">
+        <div class="monitor">
+            <div class="loading-bar"></div>
+        </div>
+        <div class="mobile">
+            <div class="loading-circle"></div>
+        </div>
+    </div>
+</div>
+        
         <div class="header" id="main-content">
             <div class="header-logo">
                 <img src="https://github.com/wamiq271801/FUSION-GADGETS/blob/main/logo.png?raw=true" alt="Fusion Gadgets Logo">
@@ -411,6 +511,16 @@ function nextImage() {
         document.getElementById('main-content').classList.remove('blurred');
         document.getElementById('container').classList.remove('blurred');
     }
+
+            <script>
+    window.onload = function() {
+        setTimeout(() => {
+            document.getElementById('preloader').style.display = 'none';
+        }, 3000);
+    };
+</script>
+
+            
     </script>
     </body>
     </html>
