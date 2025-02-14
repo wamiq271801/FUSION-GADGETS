@@ -316,6 +316,144 @@ const products = {
     description: 'Special Airpods Pro 2 with Display, Active Noise Cancellation; Environmental Noise Cancellation, Wall paper, Media Controls, Camera Controller, Spatial Audio Wireless Headset Bluetooth Headset (White, True Wireless)'
   },
 
+  'Boat Airdopes Atom 151': {
+    title: 'Boat Airdopes Atom 151',
+    price: 1399,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/BOAT_AIRDOPES/Boat_Airdopes%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/BOAT_AIRDOPES/Boat_Airdopes%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/BOAT_AIRDOPES/Boat_Airdopes%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/BOAT_AIRDOPES/Boat_Airdopes%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/BOAT_AIRDOPES/Boat_Airdopes%20(5).png',
+
+    ],
+    description: 'Boat Airdopes Atom 151 Bluetooth True Wireless (TWS) in Ear 30 Hours Playback|Low Latency|Voice Assistant|Powerfull bass|IPX4 (Splash & Sweat Proof).'
+  },
+
+  'Airpods Pro 2nd. gen.': {
+    title: 'Airpods Pro 2nd. gen.',
+    price: 499,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_500/Airpods_500%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_500/Airpods_500%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_500/Airpods_500%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_500/Airpods_500%20(4).png',
+
+    ],
+    description: 'Airpods Pro 2 With Active Noise Cancellation, Spatial Audio Wireless Headset Bluetooth Headset (White, True Wireless).'
+  },
+
+  'MI Type-c Charging Cable1': {
+    title: 'MI Type-c Charging Cable',
+    price: 199,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_TYPE-C/pixelcut-export%20(7).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_TYPE-C/MI_Type-c%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_TYPE-C/MI_Type-c%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_TYPE-C/MI_Type-c%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_TYPE-C/MI_Type-c%20(5).png',
+
+    ],
+    description: 'Charging Cable Type-A to USB Type-c 120cm fast Charging cable|Up to 3.0 Amps Fast Charge|480mbps support|Suitable for all Smartphones,tablet and accessories with USB Type-c input.'
+  },
+
+  'MI Type-A to Micro USB Cable': {
+    title: 'MI Type-A to Micro USB Cable',
+    price: 179,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_MICRO_USB_CABLE/MI_Micro%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_MICRO_USB_CABLE/MI_Micro%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_MICRO_USB_CABLE/MI_Micro%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_MICRO_USB_CABLE/MI_Micro%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_MICRO_USB_CABLE/MI_Micro%20(5).png',
+
+    ],
+    description: 'Charging Cable Type-A to Micro USB 120cm fast Charging cable|480mbps support|Suitable for all Smartphones,tablet and accessories with micro USB input.'
+  },
+
+  'MINI USB Night Lamp': {
+    title: 'MINI USB Night Lamp',
+    price: 39,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MINI_USB_N.L./MINI_USB_N.L.%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MINI_USB_N.L./MINI_USB_N.L.%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MINI_USB_N.L./MINI_USB_N.L.%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MINI_USB_N.L./MINI_USB_N.L.%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MINI_USB_N.L./MINI_USB_N.L.%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MINI_USB_N.L./MINI_USB_N.L.%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MINI_USB_N.L./MINI_USB_N.L.%20(7).png',
+
+    ],
+    description: 'MINI USB Night Lamp(Cool).'
+  },
+
+  'HTC Trimmer': {
+    title: 'HTC Trimmer',
+    price: 599,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HTC_Trimmer/HTC_Trimmer%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HTC_Trimmer/HTC_Trimmer%20(2).png',
+
+    ],
+    description: 'H T C trimmer HTC Rechargeable Hair Trimmer AT - 527 Runtime: 45 min Trimmer for Men & Women (Black, Steel, Silver).'
+  },
+
+  'Vega Insta Glam Foldable 1000 Watts Hair Dryer': {
+    title: 'Vega Insta Glam Foldable 1000 Watts Hair Dryer',
+    price: 799,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Vega_Hair_Dryer/Vega_HairDryer%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Vega_Hair_Dryer/Vega_HairDryer%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Vega_Hair_Dryer/Vega_HairDryer%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Vega_Hair_Dryer/Vega_HairDryer%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Vega_Hair_Dryer/Vega_HairDryer%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Vega_Hair_Dryer/Vega_HairDryer%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Vega_Hair_Dryer/Vega_HairDryer%20(7).png',
+
+    ],
+    description: 'Vega Insta Glam Foldable 1000 Watts Hair Dryer with 2 Heat & Speed Settings, Detachable Nozzle, Overheat Cut-out, Quick Dry with 1000W, Hair Dryer for Women, VHDH-20, (Made in India), Pink & White.'
+  },
+
+  'Ultrapods Max': {
+    title: 'Ultrapods Max',
+    price: 349,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Ultrapods_Max/Ultrapods_Max%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Ultrapods_Max/Ultrapods_Max%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Ultrapods_Max/Ultrapods_Max%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Ultrapods_Max/Ultrapods_Max%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Ultrapods_Max/Ultrapods_Max%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Ultrapods_Max/Ultrapods_Max%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Ultrapods_Max/Ultrapods_Max%20(7).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Ultrapods_Max/Ultrapods_Max%20(8).png',
+
+    ],
+    description: 'Ultrapods Ear Buds with Transparent Charging Case,Mic 240 Bluetooth Headset Processor  (Multicolor).'
+  },
+
+  'Cromptom Nigella Mixer Grinder 500 watt': {
+    title: 'Cromptom Nigella Mixer Grinder 500 watt',
+    price: 2999,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Cromptom_Nigella/Cromptom_Nigella%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Cromptom_Nigella/Cromptom_Nigella%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Cromptom_Nigella/Cromptom_Nigella%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Cromptom_Nigella/Cromptom_Nigella%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Cromptom_Nigella/Cromptom_Nigella%20(5).png',
+
+    ],
+    description: 'Crompton LIFE ESSENTIAL 5 YEAR WARRANTY 500 W Mixer Grinder  (NIGELLA | 3 Jars | Purple, White).'
+  },
+
 };
 /************************************
   INITIALIZATION
