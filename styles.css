@@ -539,7 +539,7 @@ body {
   right: 20px;
   background: none;
   border: none;
-  color: cyan;
+  color: red;
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
@@ -551,7 +551,7 @@ body {
   transform: translateY(-50%);
   background: none;
   border: none;
-  color: cyan;
+  color: red;
   font-size: 30px;
   cursor: pointer;
   padding: 0 10px;
