@@ -59,7 +59,7 @@ const products = {
     description: 'Smartwatch 10 Generation with 2.09 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger, Splash Resistant (Silver, 45mm).'
   },
 
-  'Series 10 Smartwatch Milanese Strap': {
+  'Milanese Strap': {
     title: 'Series 10 Smartwatch Milanese Strap',
     price: 2199,
     images: 
@@ -86,21 +86,6 @@ const products = {
 
     ],
     description: 'TX10 PRO MAX Smartwatch with 1.9 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger|Black.'
-  },
-
-  'Series 10 Smartwatch': {
-    title: 'Series 10 Smartwatch',
-    price: 2999,
-    images: 
-      [
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(1).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(2).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(3).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(4).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(5).png',
-
-    ],
-    description: 'Smartwatch 10 Generation with 2.09 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger, Splash Resistant (Silver, 45mm).'
   },
 
   'Hk 10 Ultra 3_Wi-Fi Amoled Smartwatch': {
@@ -314,6 +299,21 @@ const products = {
 
     ],
     description: 'Airpods Pro 2 With Active Noise Cancellation, Spatial Audio Wireless Headset Bluetooth Headset (White, True Wireless)'
+  },
+
+  'Airpods Pro 2nd. gen with Display': {
+    title: 'Airpods Pro 2nd. gen with Display',
+    price: 1699,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/DISPLAY_AIRPODS/Display_Airpods%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/DISPLAY_AIRPODS/Display_Airpods%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/DISPLAY_AIRPODS/Display_Airpods%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/DISPLAY_AIRPODS/Display_Airpods%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/DISPLAY_AIRPODS/Display_Airpods%20(5).png',
+
+    ],
+    description: 'Special Airpods Pro 2 with Display, Active Noise Cancellation; Environmental Noise Cancellation, Wall paper, Media Controls, Camera Controller, Spatial Audio Wireless Headset Bluetooth Headset (White, True Wireless)'
   },
 
 };
