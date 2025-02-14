@@ -50,10 +50,11 @@ const products = {
     price: 2499,
     images: 
       [
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(1).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(2).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(3).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10/Series10%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10/Series10%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10/Series10%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10/Series10%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10/Series10%20(5).png',
     ],
     description: 'Smartwatch 10 Generation with 2.09 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger, Splash Resistant (Silver, 45mm).'
   },
