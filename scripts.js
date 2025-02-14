@@ -21,6 +21,8 @@ const closePopup = document.querySelector('.close-popup');
 
 // CART ARRAY
 let cart = [];
+
+// VARIABLES FOR IMAGE POPUP
 let currentImageIndex = 0;
 let currentProductImages = [];
 
@@ -73,7 +75,10 @@ const products = {
 /************************************
   INITIALIZATION
 ************************************/
-generateProductCards();
+
+loadCartFromLocalStorage(); // Load cart data from local storage
+generateProductCards(); // Generate product cards
+updateCart(); // Update cart display
 
 /************************************
   FUNCTION DEFINITIONS
@@ -126,6 +131,7 @@ function updateCart() {
   if (cart.length === 0) {
     cartItemsContainer.innerHTML = '<p>Your cart is empty.</p>';
     cartCount.style.display = 'none';
+    saveCartToLocalStorage(); // Save empty cart to local storage
     return;
   }
 
@@ -152,6 +158,25 @@ function updateCart() {
   document.getElementById('cartTotalAmount').textContent = `₹${totalAmount.toFixed(2)}`;
   cartCount.textContent = totalQuantity;
   cartCount.style.display = 'inline-block';
+
+  saveCartToLocalStorage(); // Save cart to local storage
+}
+
+/**
+ * Saves the current cart to local storage.
+ */
+function saveCartToLocalStorage() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+/**
+ * Loads the cart from local storage.
+ */
+function loadCartFromLocalStorage() {
+  const storedCart = localStorage.getItem('cart');
+  if (storedCart) {
+    cart = JSON.parse(storedCart);
+  }
 }
 
 /**
@@ -161,14 +186,33 @@ function updateCart() {
 function showNotification(message) {
   notificationMessage.textContent = message;
   notificationModal.style.display = 'block';
+  document.body.classList.add('no-scroll'); // Prevent background interaction
 }
 
 /**
- * Toggles the visibility of the cart drawer.
+ * Toggles the visibility of the cart drawer and disables background scrolling.
  * @param {boolean} open - True to open, false to close.
  */
 function toggleCartDrawer(open) {
   cartDrawer.classList.toggle('open', open);
+  document.body.classList.toggle('no-scroll', open);
+}
+
+/**
+ * Opens the image popup modal with the current image and disables background scrolling.
+ */
+function openImagePopup() {
+  popupImage.src = currentProductImages[currentImageIndex];
+  imagePopupModal.classList.add('open');
+  document.body.classList.add('no-scroll');
+}
+
+/**
+ * Closes the image popup modal and re-enables background scrolling.
+ */
+function closeImagePopup() {
+  imagePopupModal.classList.remove('open');
+  document.body.classList.remove('no-scroll');
 }
 
 /**
@@ -218,8 +262,10 @@ function updateQuantity(event) {
     showNotification('Maximum quantity for this item is 50.');
   }
   const productInCart = cart.find((product) => product.title === productTitle);
-  productInCart.quantity = newQuantity;
-  updateCart();
+  if (productInCart) {
+    productInCart.quantity = newQuantity;
+    updateCart();
+  }
 }
 
 /**
@@ -250,7 +296,7 @@ function checkoutCart() {
   cart.forEach((product) => {
     orderSummary += `${product.title} - ${product.quantity} x ₹${product.price.toFixed(2)}\n`;
   });
-  orderSummary += `\nTotal: ₹${document.getElementById('cartTotalAmount').textContent}`;
+  orderSummary += `\nTotal: ₹${document.getElementById('cartTotalAmount').textContent.trim()}`;
   const whatsappNumber = '918858763010';
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderSummary)}`;
   window.open(whatsappUrl, '_blank');
@@ -273,21 +319,6 @@ function handleImageSlider(button) {
   imageElement.setAttribute('data-index', currentIndex);
 }
 
-/**
- * Opens the image popup modal with the current image.
- */
-function openImagePopup() {
-  popupImage.src = currentProductImages[currentImageIndex];
-  imagePopupModal.classList.add('open');
-}
-
-/**
- * Closes the image popup modal.
- */
-function closeImagePopup() {
-  imagePopupModal.classList.remove('open');
-}
-
 /************************************
   EVENT LISTENERS
 ************************************/
@@ -300,37 +331,53 @@ document.addEventListener('click', (event) => {
   if (target.classList.contains('add-to-cart-button')) {
     const productId = target.getAttribute('data-product');
     addToCart(productId);
+    return;
   }
 
   // Handle 'Buy Now' button
-  else if (target.classList.contains('buy-now-button')) {
+  if (target.classList.contains('buy-now-button')) {
     const productId = target.getAttribute('data-product');
     placeOrderWhatsApp(productId);
+    return;
   }
 
   // Handle product image click for popup
-  else if (target.classList.contains('product-image')) {
+  if (target.classList.contains('product-image')) {
     const productId = target.getAttribute('data-product');
     const product = products[productId];
     currentProductImages = product.images;
     currentImageIndex = parseInt(target.getAttribute('data-index'), 10);
     openImagePopup();
+    return;
   }
 
   // Handle image slider buttons
-  else if (target.classList.contains('prev-button') || target.classList.contains('next-button')) {
+  if (target.classList.contains('prev-button') || target.classList.contains('next-button')) {
     handleImageSlider(target);
+    return;
   }
 
   // Handle 'Remove' button in cart
-  else if (target.classList.contains('remove-button')) {
+  if (target.classList.contains('remove-button')) {
     const title = target.getAttribute('data-title');
     removeFromCart(title);
+    return;
+  }
+
+  // Close notification modal when clicking outside content
+  if (target === notificationModal) {
+    notificationModal.style.display = 'none';
+    document.body.classList.remove('no-scroll');
+  }
+
+  // Close image popup when clicking outside content
+  if (target === imagePopupModal) {
+    closeImagePopup();
   }
 });
 
 // Event listener for updating quantity in cart
-document.addEventListener('change', (event) => {
+document.addEventListener('input', (event) => {
   if (event.target.classList.contains('cart-item-quantity')) {
     updateQuantity(event);
   }
@@ -344,12 +391,13 @@ closeButton.addEventListener('click', () => toggleCartDrawer(false));
 checkoutButton.addEventListener('click', checkoutCart);
 
 // Event listeners for notification modal
-closeNotification.addEventListener('click', () => (notificationModal.style.display = 'none'));
-notificationButton.addEventListener('click', () => (notificationModal.style.display = 'none'));
-window.addEventListener('click', (event) => {
-  if (event.target === notificationModal) {
-    notificationModal.style.display = 'none';
-  }
+closeNotification.addEventListener('click', () => {
+  notificationModal.style.display = 'none';
+  document.body.classList.remove('no-scroll');
+});
+notificationButton.addEventListener('click', () => {
+  notificationModal.style.display = 'none';
+  document.body.classList.remove('no-scroll');
 });
 
 // Event listeners for image popup modal
