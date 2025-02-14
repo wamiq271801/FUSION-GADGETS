@@ -44,6 +44,34 @@ const products = {
 
     description: 'Smartwatch 9 Generation with 2.09 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode, Bluetooth Calling,10 Meter Connectivity Range, Wireless Charger, Splash Resistant(Black, 45 mm).'
   },
+
+  'Series 10 Smartwatch': {
+    title: 'Series 10 Smartwatch',
+    price: 2499,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(4).png',
+    ],
+    description: 'Smartwatch 10 Generation with 2.09 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger, Splash Resistant (Silver, 45mm).'
+  },
+
+  'Series 10 Smartwatch Milanese Strap': {
+    title: 'Series 10 Smartwatch Milanese Strap',
+    price: 2199,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(4).png',
+    ],
+    description: 'Smartwatch 10 Generation with 2.09 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger, Splash Resistant (Silver, 45mm).'
+  },
+
+
   'TX10 Smartwatch': {
     title: 'TX10 Smartwatch',
     price: 699,
@@ -58,6 +86,7 @@ const products = {
     ],
     description: 'TX10 PRO MAX Smartwatch with 1.9 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger|Black.'
   },
+
   'Series 10 Smartwatch': {
     title: 'Series 10 Smartwatch',
     price: 2999,
@@ -67,9 +96,225 @@ const products = {
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(2).png',
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(3).png',
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series10Milanese/Series10Milanese%20(5).png',
+
     ],
     description: 'Smartwatch 10 Generation with 2.09 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger, Splash Resistant (Silver, 45mm).'
   },
+
+  'Hk 10 Ultra 3_Wi-Fi Amoled Smartwatch': {
+    title: 'HK10Hk 10 Ultra 3_Wi-Fi Amoled Smartwatch',
+    price: 4999,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(7).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(8).png',
+
+    ],
+    description: 'Hk 10 Ultra 3_Wi-Fi Amoled Smartwatch, Wi-Fi 6, Sleek Design, Long Battery Life, Bluetooth 5.3, Advanced Health Monitoring and Elegant Design, 32 GB Storage, AI Capabilities, Ip68 Water Resistance.'
+  },
+
+  'T10 Ultra Smartwatch 2.09 bigger display': {
+    title: 'T10 Ultra Smartwatch 2.09 bigger display',
+    price: 999,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra1.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra2.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra3.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra4.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra5.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra6.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra7.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra8.png',
+
+    ],
+    description: 'T10 Ultra Smartwatch with LCD TFT Display, Orange Alpine Loop, Medium, Fitness Tracker, Action Button, Long Battery Life, Brighter Display.'
+  },
+
+  'Fire-Boltt Almighty Smartwatch (Black)': {
+    title: 'Fire-Boltt Almighty Smartwatch (Black)',
+    price: 2599,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Black%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Black%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Black%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Black%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Black%20(5).png',
+
+    ],
+    description: 'Fire-Boltt Almighty 35.3mm (1.39) AMOLED BT Calling High Res 464*464, Voice Assistance Smartwatch  (Black Strap, Free Size)'
+  },
+
+  'Fire-Boltt Almighty Smartwatch (Brown)': {
+    title: 'Fire-Boltt Almighty Smartwatch (Brown)',
+    price: 2599,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Brown%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Brown%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Brown%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Brown%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/FB_Almighty/F_B_Almighty_Brown%20(0).png',
+
+    ],
+    description: 'Fire-Boltt Almighty 35.3mm (1.39) AMOLED BT Calling High Res 464*464, Voice Assistance Smartwatch  (Brown Strap, Free Size)'
+  },
+
+  'FFIRE-BOLTT TOUCH TO WAKE SMARTWATCH': {
+    title: 'FIRE-BOLTT TOUCH TO WAKE SMARTWATCH',
+    price: 1199,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/F.B._T.O.W._Smartwatch/F.B._T.O.W%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/F.B._T.O.W._Smartwatch/F.B._T.O.W%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/F.B._T.O.W._Smartwatch/F.B._T.O.W%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/F.B._T.O.W._Smartwatch/F.B._T.O.W%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/F.B._T.O.W._Smartwatch/F.B._T.O.W%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/F.B._T.O.W._Smartwatch/F.B._T.O.W%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/F.B._T.O.W._Smartwatch/F.B._T.O.W%20(7).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/F.B._T.O.W._Smartwatch/F.B._T.O.W%20(8).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/F.B._T.O.W._Smartwatch/F.B._T.O.W%20(9).png',
+
+    ],
+    description: 'Fire-Boltt Ninja touch to Wake SpO2 Smartwatch  (Beige Strap, Regular)'
+  },
+
+  'Samsung Watch Ultra Clone': {
+    title: 'Samsung Watch Ultra Clone',
+    price: 1599,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T57/T57_1.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T57/T57_2.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T57/T57_3.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T57/T57_4.png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T57/T57_5.png',
+
+    ],
+    description: 'T57 Smartwatch (Watch Ultra Copy) with LCD TFT Display, Wireless Charger, Rotating Crown, BP Monitor, Heart Rate Monitor, Multi Sports Modes (47mm,Orange)'
+  },
+
+  'T10 Ultra Smartwatch (Black)': {
+    title: 'T10 Ultra Smartwatch (Black)',
+    price: 1599,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra_Black%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra_Black%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra_Black%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/T10Ultra/T10Ultra_Black%20(4).png',
+
+    ],
+    description: 'T10 Ultra Smartwatch with 2.09 Inch Infinite Display, Bluetooth Calling Feature, Black. '
+  },
+
+  'Lyne Lancer 16 Smartwatch (Black)': {
+    title: 'Lyne Lancer 16 Smartwatch (Black)',
+    price: 1999,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LL16_Black/LL16_Black%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LL16_Black/LL16_Black%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LL16_Black/LL16_Black%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LL16_Black/LL16_Black%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LL16_Black/LL16_Black%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LL16_Black/LL16_Black%20(6).png',
+
+    ],
+    description: 'LYNE Lancer 16 Smart Watch 2.1 with LCD TFT Diaplay, heart rate monitor, activity tracker, IP65 Water resistant'
+  },
+
+  'Car Interior AC Vents Cleaning Brush': {
+    title: 'Car Interior AC Vents Cleaning Brush',
+    price: 199,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MiniCarBrush/MiniCarBrush%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MiniCarBrush/MiniCarBrush%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MiniCarBrush/MiniCarBrush%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MiniCarBrush/MiniCarBrush%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MiniCarBrush/MiniCarBrush%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MiniCarBrush/MiniCarBrush%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MiniCarBrush/MiniCarBrush%20(7).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MiniCarBrush/MiniCarBrush%20(8).png',
+
+    ],
+    description: 'Car Interior AC Vents Cleaning Brush Soft Duster Interior Cleaning Detailing Accessories Dusting Tool for Automotive Accessory Car Cleaning Brush AC Vent (Mini car Brush)'
+  },
+
+  'Manual Lint Remover': {
+    title: 'Manual Lint Remover',
+    price: 199,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LintRemover/LintRemover%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LintRemover/LintRemover%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LintRemover/LintRemover%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LintRemover/LintRemover%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LintRemover/LintRemover%20(5).png',
+
+    ],
+    description: 'Portable Lint Remover Reusable Clothes Fabric Shaver for Fabrics Furniture Blue | 1 Manual Lint Remover.'
+  },
+
+  'Mini LED Torch': {
+    title: 'Mini LED Torch',
+    price: 299,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_TORCH/LED_TORCH%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_TORCH/LED_TORCH%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_TORCH/LED_TORCH%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_TORCH/LED_TORCH%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_TORCH/LED_TORCH%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_TORCH/LED_TORCH%20(6).png',
+
+    ],
+    description: 'LED Flashlight with COB Light Mini Splash Resistant|Portable LED XPE COB Flashlight with case|USB Rechargeable|3 Modes Pen Clip Light Flashlight|Hanging Rope|Small Size|Black.'
+  },
+
+  'Airpods Pro 2nd. gen. (Black)': {
+    title: 'Airpods Pro 2nd. gen. (Black)',
+    price: 1999,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_BLACK/Airpods_Black%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_BLACK/Airpods_Black%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_BLACK/Airpods_Black%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_BLACK/Airpods_Black%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_BLACK/Airpods_Black%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(8).png',
+
+    ],
+    description: 'Special Edition Airpods Pro 2 With Active Noise Cancellation, Spatial Audio Wireless Headset Bluetooth Headset (Black, True Wireless)'
+  },
+
+  'Airpods Pro 2nd. gen. (White)': {
+    title: 'Airpods Pro 2nd. gen. (White)',
+    price: 1699,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(7).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(8).png',
+
+    ],
+    description: 'Airpods Pro 2 With Active Noise Cancellation, Spatial Audio Wireless Headset Bluetooth Headset (White, True Wireless)'
+  },
+
 };
 /************************************
   INITIALIZATION
