@@ -778,25 +778,25 @@ html {
     }
 }
 
-/* Compact and Highlighted Search Bar Styling with Violet Blue Border */
+/* Base Search Bar Styling with Violet Blue Border */
 .search-bar-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0.5rem;
   background-color: hsla(var(--background), 0.95);
-  border: 1px solid #8A2BE2; /* Violet blue border */
+  border: 1px solid #8A2BE2; /* Violet-blue border */
   border-radius: var(--radius);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 400px; /* Adjust width as needed */
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .search-input {
   flex: 1;
-  padding: 0.3rem 0.5rem; /* Reduced padding for a compact look */
+  padding: 0.3rem 0.5rem;
   border: none;
   font-size: 0.8rem;
   outline: none;
@@ -810,11 +810,26 @@ html {
 }
 
 .search-button {
-  padding: 0.3rem 0.5rem; /* Smaller button padding */
-  background: none; /* Remove background */
+  padding: 0.3rem 0.5rem;
+  background: none;
   border: none;
   color: hsl(var(--primary-foreground));
   font-size: 0.8rem;
   cursor: pointer;
 }
 
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  .search-bar-container {
+    max-width: 90%; /* Allow search bar to take up more of the screen */
+    margin-top: 0.5rem;
+  }
+  .search-input {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.75rem;
+  }
+  .search-button {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.75rem;
+  }
+}
