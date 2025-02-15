@@ -345,6 +345,74 @@ const products = {
     description: 'Airpods Pro 2 With Active Noise Cancellation, Spatial Audio Wireless Headset Bluetooth Headset (White, True Wireless).'
   },
 
+  'Ultrapods TWS Earbud.': {
+    title: 'Ultrapods TWS Earbud.',
+    price: 399,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/ULTRAPODS_PRO/Ultrapods%20Pro%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/ULTRAPODS_PRO/Ultrapods%20Pro%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/ULTRAPODS_PRO/Ultrapods%20Pro%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/ULTRAPODS_PRO/Ultrapods%20Pro%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/ULTRAPODS_PRO/Ultrapods%20Pro%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/ULTRAPODS_PRO/Ultrapods%20Pro%20(7).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/ULTRAPODS_PRO/Ultrapods%20Pro%20(8).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/ULTRAPODS_PRO/Ultrapods%20Pro%20(9).png',
+
+    ],
+    description: 'Ultrapods TWS Earbud Transparent Design, 30 Hrs Playtime with Fast 30 Hrs Playtime with Fast Charging Bluetooth 5.313mm HD BASS Drivers (multicolor).'
+  },
+
+  'realme Buds 2 Wired Earphone.': {
+    title: 'realme Buds 2 Wired Earphone.',
+    price: 249,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_Earphone/MI_EARPHONE%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_Earphone/MI_EARPHONE%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_Earphone/MI_EARPHONE%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_Earphone/MI_EARPHONE%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_Earphone/MI_EARPHONE%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_Earphone/MI_EARPHONE%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_Earphone/MI_EARPHONE%20(7).png',
+
+    ],
+    description: 'realme Buds 2 Wired Earphone (Black, In the Ear).'
+  },
+
+  'LED Touch Lamp Portable Bluetooth Speaker.': {
+    title: 'LED Touch Lamp Portable Bluetooth Speaker.',
+    price: 499,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_Speaker/LED_Speaker%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_Speaker/LED_Speaker%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_Speaker/LED_Speaker%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_Speaker/LED_Speaker%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_Speaker/LED_Speaker%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_Speaker/LED_Speaker%20(6).png',
+
+    ],
+    description: 'LED Touch Lamp Portable Bluetooth Speaker Lamps with Microphone | LED Touch Bedside Table Lamp | Wireless HiFi Speaker Light, USB Rechargeable SD Card Reader, and Multi-Device Compatibility.'
+  },
+
+  'Samsung 25W Type C Charger.': {
+    title: 'Samsung 25W Type C Charger.',
+    price: 599,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Samsung_Charger/Samsung_Adapter%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Samsung_Charger/Samsung_Adapter%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Samsung_Charger/Samsung_Adapter%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Samsung_Charger/Samsung_Adapter%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Samsung_Charger/Samsung_Adapter%20(5).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Samsung_Charger/Samsung_Adapter%20(6).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Samsung_Charger/Samsung_Adapter%20(7).png',
+
+    ],
+    description: 'Samsung 25W Type C Charger for Galaxy A16/M05/A05/A35/M35/F05/M15, F15/A15/A14/M14/F14/A34/M34/F34/S24 Ultra, S23/S23 fe/Z fold/flip/6/5/4/3, Fast Charge for Tab USB C Adapter, White.'
+  },
+
   'MI Type-c Charging Cable1': {
     title: 'MI Type-c Charging Cable',
     price: 199,
@@ -404,6 +472,20 @@ const products = {
     description: 'H T C trimmer HTC Rechargeable Hair Trimmer AT - 527 Runtime: 45 min Trimmer for Men & Women (Black, Steel, Silver).'
   },
 
+  'Mini Space Electric Room Heater': {
+    title: 'Mini Space Electric Room Heater',
+    price: 799,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/PORTABLE_HEATER_HANDEL/PORTABLE_HEATER_HANDEL%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/PORTABLE_HEATER_HANDEL/PORTABLE_HEATER_HANDEL%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/PORTABLE_HEATER_HANDEL/PORTABLE_HEATER_HANDEL%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/PORTABLE_HEATER_HANDEL/PORTABLE_HEATER_HANDEL%20(4).png',
+
+    ],
+    description: 'Mini Space Electric Room Heater Portable, Ceramic Air Conditioner Fan Heater Small Heater Hot Air Heater for Auto Home Office Desktop with Adjustable Thermostat, Overheat Protection (Black).'
+  },
+
   'Vega Insta Glam Foldable 1000 Watts Hair Dryer': {
     title: 'Vega Insta Glam Foldable 1000 Watts Hair Dryer',
     price: 799,
@@ -452,6 +534,33 @@ const products = {
 
     ],
     description: 'Crompton LIFE ESSENTIAL 5 YEAR WARRANTY 500 W Mixer Grinder  (NIGELLA | 3 Jars | Purple, White).'
+  },
+
+  'SURYA HERITAGE 1000 W Dry Iron  (Grey)': {
+    title: 'SURYA HERITAGE 1000 W Dry Iron  (Grey)',
+    price: 899,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/SURYA_IRON/SURYA_IRON%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/SURYA_IRON/SURYA_IRON%20(2).png',
+
+    ],
+    description: 'SURYA HERITAGE 1000 W Dry Iron  (Grey)'
+  },
+
+  'Havells aquilla 1000 W Dry Iron  (Orange)': {
+    title: 'Havells aquilla 1000 W Dry Iron  (Orange)',
+    price: 999,
+    images: 
+      [
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HAVELLS_AQUILLA_IRON/HEAVELLS_AQUILLA%20(1).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HAVELLS_AQUILLA_IRON/HEAVELLS_AQUILLA%20(2).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HAVELLS_AQUILLA_IRON/HEAVELLS_AQUILLA%20(3).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HAVELLS_AQUILLA_IRON/HEAVELLS_AQUILLA%20(4).png',
+      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HAVELLS_AQUILLA_IRON/HEAVELLS_AQUILLA%20(5).png',
+
+    ],
+    description: 'Havells aquilla 1000 W Dry Iron  (Orange)'
   },
 
 };
