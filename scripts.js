@@ -1012,3 +1012,32 @@ document.addEventListener("click", (event) => {
     history.pushState(null, "", location.href);
   }
 });
+
+/* Search Functionality */
+const searchInput = document.querySelector('.search-input');
+if (searchInput) {
+  searchInput.addEventListener('input', function() {
+    const query = searchInput.value.toLowerCase();
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+      const title = card.querySelector('.product-title').textContent.toLowerCase();
+      if (title.includes(query)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+}
+
+// Minimize navbar on scroll
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) { // Adjust the scroll threshold as needed
+    header.classList.add('minimized');
+  } else {
+    header.classList.remove('minimized');
+  }
+});
+
