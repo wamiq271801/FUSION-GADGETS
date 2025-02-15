@@ -31,7 +31,7 @@ let currentProductImages = [];
 ************************************/
 const products = {
   'Apple watch Series 9 Clone': {
-    title: 'Apple watch Series 10 Clone',
+    title: 'Apple watch Series 9 Clone',
     price: 2399,
     images: [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Series9/Series9%20(6).png',
@@ -86,24 +86,6 @@ const products = {
 
     ],
     description: 'TX10 PRO MAX Smartwatch with 1.9 inch LCD TFT Display, Sleep Tracking, BP Monitor, Multi Sports Mode Bluetooth Calling, 10 Meter Connectivity Range, Wireless Charger|Black.'
-  },
-
-  'Hk 10 Ultra 3_Wi-Fi Amoled Smartwatch': {
-    title: 'HK10Hk 10 Ultra 3_Wi-Fi Amoled Smartwatch',
-    price: 4999,
-    images: 
-      [
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(1).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(2).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(3).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(4).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(5).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(6).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(7).png',
-      'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HK10Ultra3/HK10Ultra3%20(8).png',
-
-    ],
-    description: 'Hk 10 Ultra 3_Wi-Fi Amoled Smartwatch, Wi-Fi 6, Sleek Design, Long Battery Life, Bluetooth 5.3, Advanced Health Monitoring and Elegant Design, 32 GB Storage, AI Capabilities, Ip68 Water Resistance.'
   },
 
   'T10 Ultra Smartwatch 2.09 bigger display': {
@@ -220,7 +202,7 @@ const products = {
 
   'Car Interior AC Vents Cleaning Brush': {
     title: 'Car Interior AC Vents Cleaning Brush',
-    price: 199,
+    price: 149,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MiniCarBrush/MiniCarBrush%20(1).png',
@@ -238,7 +220,7 @@ const products = {
 
   'Manual Lint Remover': {
     title: 'Manual Lint Remover',
-    price: 199,
+    price: 99,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LintRemover/LintRemover%20(1).png',
@@ -253,7 +235,7 @@ const products = {
 
   'Mini LED Torch': {
     title: 'Mini LED Torch',
-    price: 299,
+    price: 149,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_TORCH/LED_TORCH%20(1).png',
@@ -269,7 +251,7 @@ const products = {
 
   'Airpods Pro 2nd. gen. (Black)': {
     title: 'Airpods Pro 2nd. gen. (Black)',
-    price: 1999,
+    price: 1199,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_BLACK/Airpods_Black%20(1).png',
@@ -285,7 +267,7 @@ const products = {
 
   'Airpods Pro 2nd. gen. (White)': {
     title: 'Airpods Pro 2nd. gen. (White)',
-    price: 1699,
+    price: 999,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_WHITE/Airpods_White%20(1).png',
@@ -303,7 +285,7 @@ const products = {
 
   'Airpods Pro 2nd. gen with Display': {
     title: 'Airpods Pro 2nd. gen with Display',
-    price: 1699,
+    price: 1499,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/DISPLAY_AIRPODS/Display_Airpods%20(1).png',
@@ -318,7 +300,7 @@ const products = {
 
   'Boat Airdopes Atom 151': {
     title: 'Boat Airdopes Atom 151',
-    price: 1399,
+    price: 799,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/BOAT_AIRDOPES/Boat_Airdopes%20(1).png',
@@ -333,7 +315,7 @@ const products = {
 
   'Airpods Pro 2nd. gen.': {
     title: 'Airpods Pro 2nd. gen.',
-    price: 499,
+    price: 399,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/AIRPODS_500/Airpods_500%20(1).png',
@@ -347,7 +329,7 @@ const products = {
 
   'Ultrapods TWS Earbud.': {
     title: 'Ultrapods TWS Earbud.',
-    price: 399,
+    price: 349,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/ULTRAPODS_PRO/Ultrapods%20Pro%20(2).png',
@@ -365,7 +347,7 @@ const products = {
 
   'realme Buds 2 Wired Earphone.': {
     title: 'realme Buds 2 Wired Earphone.',
-    price: 249,
+    price: 99,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_Earphone/MI_EARPHONE%20(1).png',
@@ -382,7 +364,7 @@ const products = {
 
   'LED Touch Lamp Portable Bluetooth Speaker.': {
     title: 'LED Touch Lamp Portable Bluetooth Speaker.',
-    price: 499,
+    price: 399,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/LED_Speaker/LED_Speaker%20(1).png',
@@ -398,7 +380,7 @@ const products = {
 
   'Samsung 25W Type C Charger.': {
     title: 'Samsung 25W Type C Charger.',
-    price: 599,
+    price: 549,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Samsung_Charger/Samsung_Adapter%20(1).png',
@@ -415,7 +397,7 @@ const products = {
 
   'MI Type-c Charging Cable1': {
     title: 'MI Type-c Charging Cable',
-    price: 199,
+    price: 179,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_TYPE-C/pixelcut-export%20(7).png',
@@ -430,7 +412,7 @@ const products = {
 
   'MI Type-A to Micro USB Cable': {
     title: 'MI Type-A to Micro USB Cable',
-    price: 179,
+    price: 149,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MI_MICRO_USB_CABLE/MI_Micro%20(1).png',
@@ -445,7 +427,7 @@ const products = {
 
   'MINI USB Night Lamp': {
     title: 'MINI USB Night Lamp',
-    price: 39,
+    price: 25,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/MINI_USB_N.L./MINI_USB_N.L.%20(1).png',
@@ -462,7 +444,7 @@ const products = {
 
   'HTC Trimmer': {
     title: 'HTC Trimmer',
-    price: 599,
+    price: 449,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/HTC_Trimmer/HTC_Trimmer%20(1).png',
@@ -474,7 +456,7 @@ const products = {
 
   'Mini Space Electric Room Heater': {
     title: 'Mini Space Electric Room Heater',
-    price: 799,
+    price: 649,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/PORTABLE_HEATER_HANDEL/PORTABLE_HEATER_HANDEL%20(1).png',
@@ -488,7 +470,7 @@ const products = {
 
   'Vega Insta Glam Foldable 1000 Watts Hair Dryer': {
     title: 'Vega Insta Glam Foldable 1000 Watts Hair Dryer',
-    price: 799,
+    price: 699,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Vega_Hair_Dryer/Vega_HairDryer%20(1).png',
@@ -505,7 +487,7 @@ const products = {
 
   'Ultrapods Max': {
     title: 'Ultrapods Max',
-    price: 349,
+    price: 299,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Ultrapods_Max/Ultrapods_Max%20(1).png',
@@ -523,7 +505,7 @@ const products = {
 
   'Cromptom Nigella Mixer Grinder 500 watt': {
     title: 'Cromptom Nigella Mixer Grinder 500 watt',
-    price: 2999,
+    price: 2299,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/Cromptom_Nigella/Cromptom_Nigella%20(1).png',
@@ -538,7 +520,7 @@ const products = {
 
   'SURYA HERITAGE 1000 W Dry Iron  (Grey)': {
     title: 'SURYA HERITAGE 1000 W Dry Iron  (Grey)',
-    price: 899,
+    price: 799,
     images: 
       [
       'https://raw.githubusercontent.com/wamiq271801/FUSION-GADGETS/refs/heads/main/images/SURYA_IRON/SURYA_IRON%20(1).png',
